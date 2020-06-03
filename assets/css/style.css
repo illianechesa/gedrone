@@ -1569,3 +1569,8 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+#list_drone{
+  height: 10px;
+  width: 10px;
+}
