@@ -188,11 +188,11 @@
       </table>
     </div>
     <div class="row">
-      <caption>Localización</caption>
+      <h6>Localización</h6>
+      <h6 style="margin-left: 45%;">Información</h6>
     </div>
     <div class="row">
       <div id="googleMap" style="width:45%;height:300px;"></div>
-
       <script>
         function myMap() {
           var mapProp = {
@@ -202,8 +202,15 @@
           var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
         }
       </script>
-      <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD93dDOWXwzcY8yJHBUyD_rRIDazxGJl80&callback=myMap"></script>
+      <div id="informacion" style="margin-left: 90px;">
+        <strong>Equipo: </strong> Illia, Jesús <br />
+        <strong>Tiempo inicio: </strong> 06/06/2020 8:02 AM <br />
+        <strong>Tiempo final: </strong> 06/06/2020 8:16 AM <br />
+        <strong>Plan: </strong> Elevación <br />
+        <strong>Tipo misión: </strong> Test aterrizaje <br /><br />
+        <strong>Observaciones: </strong>
+        <p><textarea name="observaciones" cols="40" rows="5" placeholder="Observaciones..."></textarea></p>
+      </div>
     </div>
   </div>
 
@@ -211,6 +218,8 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD93dDOWXwzcY8yJHBUyD_rRIDazxGJl80&callback=myMap"></script>
 
 </body>
 
