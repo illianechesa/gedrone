@@ -2,6 +2,10 @@
     margin: 15px;
 }
 
+.row {
+    margin: 12px 30px /* Add some space below the input */
+}
+
 #inputProject, #inputModel {
     background-repeat: no-repeat; /* Do not repeat the icon image */
     width: 45%; /* Full-width */
