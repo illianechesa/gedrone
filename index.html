@@ -29,13 +29,13 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Gedrone</a>
+      <a class="navbar-brand" href="#" style="margin-left: -130px;">Gedrone</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" style="margin-right: -130px;">
           <li class="nav-item active">
             <a class="nav-link" href="#">Inicio
               <span class="sr-only">(current)</span>
@@ -58,10 +58,11 @@
   <!-- Page Content -->
   <div class="main">
     <div class="row">
-      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar por modelo...">
+      <input type="text" id="inputModel" onkeyup="searchModel()" placeholder="Buscar por modelo...">
+      <input type="text" id="inputProject" onkeyup="searchProject()" placeholder="Buscar por proyecto...">
     </div>
     <div class="row">
-      <table id="myTable">
+      <table id="aeronaves">
         <caption>Aeronaves</caption>
         <tr class="header">
           <th style="width:20%;">Modelo</th>
@@ -122,6 +123,67 @@
           <td><img src="img/edit_icon.png" alt="editar" height="15px" width="15px"></td>
           <td><img src="img/delete_icon.png" alt="eliminar" height="15px" width="15px"></td>
           <td><img src="img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px"></td>
+        </tr>
+      </table>
+      <table id="vuelos">
+        <caption>Vuelos</caption>
+        <tr class="header">
+          <th style="width:20%;">Modelo</th>
+          <th style="width:20%;">Piloto</th>
+          <th style="width:20%;">Fecha</th>
+          <th style="width:10%;">Proyecto</th>
+          <th style="width:10%;">Realizado</th>
+          <th style="width:10%;">Editar</th>
+          <th style="width:10%;">Eliminar</th>
+          <th style="width:10%;">Info</th>
+        </tr>
+        <tr>
+          <td>M5</td>
+          <td>Illia</td>
+          <td>
+            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+          </td>
+          <td>Tesicnor</td>
+          <td><input type="checkbox"></td>
+          <td><img src="img/edit_icon.png" alt="editar" height="15px" width="15px"></td>
+          <td><img src="img/delete_icon.png" alt="eliminar" height="15px" width="15px"></td>
+          <td><img src="img/info_icon.jpg" alt="info" height="15px" width="15px"></td>
+        </tr>
+        <tr>
+          <td>M5</td>
+          <td>Jesús</td>
+          <td>
+            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+          </td>
+          <td>Tesicnor</td>
+          <td><input type="checkbox"></td>
+          <td><img src="img/edit_icon.png" alt="editar" height="15px" width="15px"></td>
+          <td><img src="img/delete_icon.png" alt="eliminar" height="15px" width="15px"></td>
+          <td><img src="img/info_icon.jpg" alt="info" height="15px" width="15px"></td>
+        </tr>
+        <tr>
+          <td>M5</td>
+          <td>Jesús</td>
+          <td>
+            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+          </td>
+          <td>Acciona</td>
+          <td><input type="checkbox"></td>
+          <td><img src="img/edit_icon.png" alt="editar" height="15px" width="15px"></td>
+          <td><img src="img/delete_icon.png" alt="eliminar" height="15px" width="15px"></td>
+          <td><img src="img/info_icon.jpg" alt="info" height="15px" width="15px"></td>
+        </tr>
+        <tr>
+          <td>M5</td>
+          <td>Illia</td>
+          <td>
+            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+          </td>
+          <td>Tesicnor</td>
+          <td><input type="checkbox"></td>
+          <td><img src="img/edit_icon.png" alt="editar" height="15px" width="15px"></td>
+          <td><img src="img/delete_icon.png" alt="eliminar" height="15px" width="15px"></td>
+          <td><img src="img/info_icon.jpg" alt="info" height="15px" width="15px"></td>
         </tr>
       </table>
     </div>

@@ -1,30 +1,31 @@
 .main {
-    margin: 20px;
+    margin: 15px;
 }
 
-#myInput {
+#inputProject, #inputModel {
     background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 40%; /* Full-width */
+    width: 45%; /* Full-width */
     height: 20px;
     font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
+    padding: 12px 20px 12px 10px; /* Add some padding */
     border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
+    margin: 12px 30px /* Add some space below the input */
   }
   
-  #myTable {
+  #aeronaves, #vuelos {
     border-collapse: collapse; /* Collapse borders */
-    width: 40%; /* Full-width */
+    width: 45%; /* Full-width */
     border: 1px solid #ddd; /* Add a grey border */
     font-size: 14px; /* Increase font-size */
+    margin: 12px 30px /* Add some space below the input */
   }
   
-  #myTable th, #myTable td {
+  #aeronaves th, #vuelos th, #aeronaves td, #vuelos td {
     text-align: left; /* Left-align text */
     padding: 8px; /* Add padding */
   }
   
-  #myTable tr {
+  #aeronaves tr, #vuelos tr {
     /* Add a bottom border to all table rows */
     border-bottom: 1px solid #ddd;
   }
