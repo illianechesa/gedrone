@@ -1,4 +1,7 @@
 function editDrone() {
-    console.log("link working correctly");
-    window.open("editDrone.html", "_self");
+    window.open("editdrone.html", "_self");
+}
+
+function editFlight() {
+    window.open("editflight.html", "_self");
 }

@@ -58,40 +58,33 @@
 
     <!-- Page Content -->
     <div class="main">
-        <h5>Editar aeronave</h5>
+        <h5>Editar vuelo</h5>
         <form action="index.html" method="post">
-            <table id="aeronaves">
+            <table id="vuelos">
                 <tr>
                     <th>Modelo: </th>
                     <th><input type="text" name="modelo" value="M5"></th>
                 </tr>
                 <tr>
-                    <th>NºSerie: </th>
+                    <th>Piloto: </th>
                     <th><input type="text" name="modelo" value="34234"></th>
                 </tr>
                 <tr>
-                    <th>PIN: </th>
-                    <th><input type="text" name="modelo" value="3423432"></th>
+                    <th>Fecha: </th>
+                    <th> <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                            max="2018-12-31">
+                    </th>
                 </tr>
                 <tr>
-                    <th>CE: </th>
+                    <th>Proyecto: </th>
                     <th><input type="text" name="modelo" value="EIS-12"></th>
                 </tr>
                 <tr>
-                    <th>Matricula: </th>
-                    <th><input type="text" name="modelo" value="3333"></th>
-                </tr>
-                <tr>
-                    <th>Estado: </th>
-                    <th>
-                        <select>
-                            <option name="operativo" value="operativo">Operativa</option>
-                            <option name="baja" value="baja">Baja</option>
-                        </select>
-                    </th>
+                    <th>Realizado: </th>
+                    <th><input type="checkbox"></th>
                 </tr>
             </table>
-            <p><a href="#">Mantenimiento</a></p>
+            <p></p>
             <p>
                 <input type="submit" value="Guardar">
                 <input type="reset" value="Restaurar campos">
