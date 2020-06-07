@@ -41,7 +41,3 @@ function searchProject() {
         }
     }
 }
-
-function editDrone() {
-    console.log("link working correctly");
-}
