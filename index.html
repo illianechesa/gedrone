@@ -59,12 +59,16 @@
   <!-- Page Content -->
   <div class="main">
     <div class="row">
-      <input type="text" id="inputModel" onkeyup="searchModel()" placeholder="Buscar por modelo...">
+      <h6>Aeronaves</h6>
+      <h6 style="margin-left: 43.65%;">Vuelos</h6>
+    </div>
+    <div class="row">
+      <input style="margin-left: 0px;" type="text" id="inputModel" onkeyup="searchModel()"
+        placeholder="Buscar por modelo...">
       <input type="text" id="inputProject" onkeyup="searchProject()" placeholder="Buscar por proyecto...">
     </div>
     <div class="row">
-      <table id="aeronaves">
-        <caption>Aeronaves</caption>
+      <table style="margin-left: 0px;" id="aeronaves">
         <tr class="header">
           <th style="width:20%;">Modelo</th>
           <th style="width:20%;">Matricula</th>
@@ -127,7 +131,6 @@
         </tr>
       </table>
       <table id="vuelos">
-        <caption>Vuelos</caption>
         <tr class="header">
           <th style="width:20%;">Modelo</th>
           <th style="width:20%;">Piloto</th>
@@ -188,9 +191,9 @@
         </tr>
       </table>
     </div>
-    <div class="row">
+    <div class="row" style="margin-top: 20px;">
       <h6>Localización</h6>
-      <h6 style="margin-left: 45%;">Información</h6>
+      <h6 style="margin-left: 42.85%;">Información</h6>
     </div>
     <div class="row">
       <div id="googleMap" style="width:45%;height:250px;"></div>
@@ -203,7 +206,7 @@
           var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
         }
       </script>
-      <div id="informacion" style="margin-left: 90px;">
+      <div id="informacion" style="margin-left: 60px;">
         <strong>Equipo: </strong> Illia, Jesús <br />
         <strong>Tiempo inicio: </strong> 06/06/2020 8:02 AM <br />
         <strong>Tiempo final: </strong> 06/06/2020 8:16 AM <br />
