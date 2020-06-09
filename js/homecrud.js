@@ -11,6 +11,7 @@ function deleteDrone() {
     var r = confirm("¿Estás seguro que deseas eliminar esta aeronave?");
     if (r == true) {
         txt = "Se ha eliminado la aeronave";
+        window.open("index.html", "_self");
     } else {
         txt = "Cancelado";
     }
