@@ -26,3 +26,11 @@ function deleteFlight() {
         txt = "Cancelado";
     }
 }
+
+function addModel() {
+    window.open("addmodel.html", "_self");
+}
+
+function addDrone() {
+    window.open("adddrone.html", "_self");
+}
