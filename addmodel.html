@@ -59,6 +59,15 @@
     <!-- Page Content -->
     <div class="main">
         <div class="row">
+            <h6 style="width: 100%;">Para añadir un nuevo modelo, añada un excel por favor</h6>
+            <input style="width: 100%;" type="file" name="adjunto" accept=".xlsx,.xlsm" />
+            <button style="margin-top: 20px;" onclick="loadModel()" style="color: black;">Cargar modelo</button>
+        </div>
+        <div class="row">
+            <div id="componentlist">
+                <table id="aeronaves" style="margin-left: 0px; margin-top: 50px;">
+                </table>
+            </div>
         </div>
     </div>
 

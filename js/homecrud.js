@@ -34,3 +34,8 @@ function addModel() {
 function addDrone() {
     window.open("adddrone.html", "_self");
 }
+
+function loadModel() {
+    document.getElementById("aeronaves").innerHTML = '<tr> <th>GF</th> <td>Ala</td> <td>1</td> </tr> <tr> <th>M</th> <td>Motor 1</td> <td>2</td> </tr> <tr> <th>M</th> <td>Motor 2</td> <td>3</td> </tr> <tr> <th>V</th> <td>Hélice</td> <td>4</td> </tr> <tr> <th>M</th> <td>Corcho</td> <td>5</td> </tr>';
+}
+
