@@ -59,6 +59,64 @@
     <!-- Page Content -->
     <div class="main">
         <div class="row">
+            <strong style="width: 100%; margin-bottom: 20px; margin-left: 2%;">Registro de vuelo</strong>
+            <table id="vuelos">
+                <tr>
+                    <th>Acción</th>
+                    <th>Fecha</th>
+                    <th>Documento</th>
+                </tr>
+                <tr>
+                    <th>Check-In</th>
+                    <td><input type="date"></td>
+                    <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td>
+                </tr>
+                <tr>
+                    <th>Log Vuelo</th>
+                    <td><input type="date"></td>
+                    <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td>
+                </tr>
+                <tr>
+                    <th>Check-Out</th>
+                    <td><input type="date"></td>
+                    <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td>
+                </tr>
+                <tr>
+                    <th>Log Payload</th>
+                    <td><input type="date"></td>
+                    <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <strong style="width: 100%; margin-bottom: 20px; margin-left: 2%;">Personas</strong>
+            <table id="vuelos">
+                <tr>
+                    <th>Persona</th>
+                    <th>Horas</th>
+                    <th>Rol</th>
+                </tr>
+                <tr>
+                    <td>Illia</td>
+                    <td>20</td>
+                    <td>Piloto</td>
+                </tr>
+                <tr>
+                    <td>Jesús</td>
+                    <td>5</td>
+                    <td>O.T</td>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <strong style="width: 100%; margin-bottom: 20px; margin-left: 2%;">Informe</strong>
+            <div style="margin-left: 2%; width: 20%;">
+                <p><textarea name="incidencias" cols="30" rows="5" placeholder="Incidencias..."></textarea></p>
+            </div>
+        </div>
+        <div class="row">
+            <button style="width: 10%; margin-bottom: 20px; margin-left: 2%;"
+                onclick="history.back()">Registrar</button>
         </div>
     </div>
 
