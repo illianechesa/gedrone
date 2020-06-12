@@ -47,3 +47,7 @@ function loadMto() {
 function hidemto() {
     document.getElementById("vuelos").style.visibility = "hidden";
 }
+
+function registrarvuelo() {
+    window.open("registrarvuelo.html", "_self");
+}
