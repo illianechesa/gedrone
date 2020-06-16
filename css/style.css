@@ -14,28 +14,44 @@
     padding: 12px 20px 12px 10px; /* Add some padding */
     border: 1px solid #ddd; /* Add a grey border */
     margin: 12px 30px; /* Add some space below the input */
-  }
+}
   
-  #aeronaves, #vuelos, #informacion, #persona, #piloto {
-    border-collapse: collapse; /* Collapse borders */
-    width: 45%; /* Full-width */
-    border: 1px solid #ddd; /* Add a grey border */
-    font-size: 13px; /* Increase font-size */
-    margin: 0px 30px; /* Add some space below the input */
-  }
-  
-  #aeronaves th, #vuelos th, #persona th, #piloto th, #aeronaves td, #vuelos td, #persona td, #piloto td {
-    text-align: left; /* Left-align text */
-    padding: 8px; /* Add padding */
-  }
-  
-  #aeronaves tr, #vuelos tr, #persona tr, #piloto tr {
-    /* Add a bottom border to all table rows */
-    border-bottom: 1px solid #ddd;
-  }
-  
-  #myTable tr.header, #myTable tr:hover {
-    /* Add a grey background color to the table header and on hover */
-    background-color: #f1f1f1;
-  }
+#aeronaves, #vuelos, #informacion, #persona, #piloto {
+  border-collapse: collapse; /* Collapse borders */
+  width: 45%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 13px; /* Increase font-size */
+  margin: 0px 30px; /* Add some space below the input */
+}
 
+#aeronaves th, #vuelos th, #persona th, #piloto th, #aeronaves td, #vuelos td, #persona td, #piloto td {
+  text-align: left; /* Left-align text */
+  padding: 8px; /* Add padding */
+}
+
+#aeronaves tr, #vuelos tr, #persona tr, #piloto tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+#incidencias ul{
+  list-style:none;
+  max-height:150px;
+  margin:0px;
+  overflow:auto;
+  padding-left:25px;
+  text-indent:10px;
+}
+
+#incidencias li{
+  line-height:25px;
+}
+
+#incidencias li:nth-child(even){
+  background:#ccc;
+}
