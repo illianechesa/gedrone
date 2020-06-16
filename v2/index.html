@@ -63,8 +63,10 @@
     <!-- Page Content -->
     <div class="main">
         <div class="row">
+            <strong style="width: 100%; margin-bottom: 5px; margin-left: 2%;">Proyectos</strong>
+            <input style="margin-left: 2%; width: 100%;" type="text" id="inputProject" onkeyup="searchProject()"
+                placeholder="Buscar por proyecto...">
             <table style="width: 30%;" id="persona">
-                <strong style="width: 100%; margin-bottom: 20px; margin-left: 2%;">Proyectos</strong>
                 <tr>
                     <th>Proyecto</th>
                     <th>Tipo misión</th>
@@ -88,6 +90,10 @@
                     <td>Despegues</td>
                     <td>Nasertic</td>
                     <td>Objetivo</td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td colspan="1"><button onclick="addProject()">Crear proyecto</button></td>
                 </tr>
             </table>
             <img src="../img/graphs.jpg" alt="graph" style="width: 30%; height: 10%; margin-left: 5%;">
