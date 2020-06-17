@@ -63,15 +63,15 @@
     <!-- Page Content -->
     <div class="main">
         <div class="row">
-            <strong>Proyecto 1</strong>
+            <h6>Nombre proyecto: </h6><input style="margin-left: 20px;" type="text">
         </div>
         <div class="row">
             <h6 style="width: 100%; margin-top: 20px;">Datos Proyecto</h6>
             <div id="informacion" style="margin-left: 0px; width: 100%;">
-                <strong>Tipo Misión: </strong> Prácticas<br />
-                <strong>Cliente: </strong> Tesicnor <br />
-                <strong>Objetivo: </strong> Objetivo <br />
-                <strong>Presupuesto: </strong> 2000€ <br />
+                <strong>Tipo Misión: </strong><input style="margin-left: 10px;" type="text"><br />
+                <strong>Cliente: </strong><input style="margin-left: 40px; margin-top: 15px;" type="text"><br />
+                <strong>Objetivo: </strong><input style="margin-left: 30px; margin-top: 15px;" type="text"><br />
+                <strong>Presupuesto: </strong><input style="margin-left: 7px; margin-top: 15px;" type="text"><br />
             </div>
         </div>
         <div class="row" style="margin-top: 20px;">
@@ -90,37 +90,17 @@
             <div style="width: 35%;">
                 <nav id="incidencias">
                     <ul id="myUL" style="max-height: 150px; padding-left: 0px;">
-                        <li><a href="#">Aeronave 1</a></li>
-                        <li><a href="#">Aeronave 2</a></li>
-                        <li><a href="#">Aeronave 3</a></li>
-                        <li><a href="#">Aeronave 4</a></li>
-                        <li><a href="#">Aeronave 5</a></li>
-                        <li><a href="#">Aeronave 6</a></li>
-                        <li><a href="#">Aeronave 7</a></li>
-                        <li><a href="#">Aeronave 8</a></li>
-                        <li><a href="#">Aeronave 9</a></li>
-                        <li><a href="#">Aeronave 10</a></li>
                     </ul>
                 </nav>
             </div>
             <div style="width: 35%; margin-left: 17%;">
                 <nav id="incidencias">
                     <ul id="myUL" style="max-height: 150px; padding-left: 0px;">
-                        <li><a href="#">Vuelo 1</a></li>
-                        <li><a href="#">Vuelo 2</a></li>
-                        <li><a href="#">Vuelo 3</a></li>
-                        <li><a href="#">Vuelo 4</a></li>
-                        <li><a href="#">Vuelo 5</a></li>
-                        <li><a href="#">Vuelo 6</a></li>
-                        <li><a href="#">Vuelo 7</a></li>
-                        <li><a href="#">Vuelo 8</a></li>
-                        <li><a href="#">Vuelo 9</a></li>
-                        <li><a href="#">Vuelo 10</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <div class="row" style="margin-top: 20px;">
+        <div class="row" style="margin-top: 10px;">
             <h6>Mapa</h6>
             <h6 style="margin-left: 49%;">Datos</h6>
         </div>
@@ -136,32 +116,25 @@
                 }
             </script>
             <div id="informacion" style="margin-left: 17%; width: 35%;">
-                <strong>Personas: </strong> <a href="people.html">Illia</a>, <a href="people.html">Jesús</a>
+                <strong>Personas: </strong>
                 <img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px" width="13px"
                     onclick="selectPerson()"><br />
-                <strong>Tipo misión: </strong> Prácticas <br /><br />
             </div>
         </div>
-        <div class="row">
+        <!--         <div class="row">
             <strong style="width: 100%; margin-bottom: 0px; margin-left: 0%;">Incidencias</strong>
-        </div>
+        </div> -->
         <div class="row">
             <div style="width: 100%;">
                 <nav id="incidencias">
                     <ul id="myUL" style="max-height: 150px; padding-left: 0px;">
-                        <li><a href="#">Incidencia 1</a></li>
-                        <li><a href="#">Incidencia 2</a></li>
-                        <li><a href="#">Incidencia 3</a></li>
-                        <li><a href="#">Incidencia 4</a></li>
-                        <li><a href="#">Incidencia 5</a></li>
-                        <li><a href="#">Incidencia 6</a></li>
-                        <li><a href="#">Incidencia 7</a></li>
-                        <li><a href="#">Incidencia 8</a></li>
-                        <li><a href="#">Incidencia 9</a></li>
-                        <li><a href="#">Incidencia 10</a></li>
                     </ul>
                 </nav>
             </div>
+        </div>
+        <div class="row">
+            <button type="submit" onclick="location.href='index.html'" style="margin-left: 76%;">Guardar
+                proyecto</button>
         </div>
     </div>
 

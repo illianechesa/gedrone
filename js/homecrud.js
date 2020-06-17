@@ -60,3 +60,7 @@ function listFlights() {
 function hideFlights() {
     document.getElementById("aeronaves").style.visibility = "hidden"
 }
+
+function addProject() {
+    window.open("addproject.html", "_self");
+}
