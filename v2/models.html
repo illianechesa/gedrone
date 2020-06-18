@@ -38,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto" style="margin-right: -130px;">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio </a>
+                        <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="projects.html">Proyectos</a>
@@ -63,15 +63,66 @@
     <!-- Page Content -->
     <div class="main">
         <div class="row">
+            <strong style="width: 100%;">Modelos</strong>
+            <div style="width: 35%; margin-top: 20px;">
+                <nav id="incidencias">
+                    <ul id="myUL" style="max-height: 150px; padding-left: 0px;">
+                        <li><a href="#" onclick="loadModel()">M5</a></li>
+                        <li><a href="#" onclick="loadModel()">M1</a></li>
+                        <li><a href="#" onclick="loadModel()">M4</a></li>
+                        <li><a href="#" onclick="loadModel()">Davic-365</a></li>
+                        <li><a href="#" onclick="loadModel()">Davic-1</a></li>
+                        <li><a href="#" onclick="loadModel()">M6</a></li>
+                        <li><a href="#" onclick="loadModel()">M7</a></li>
+                        <li><a href="#" onclick="loadModel()">M8</a></li>
+                        <li><a href="#" onclick="loadModel()">M9</a></li>
+                        <li><a href="#" onclick="loadModel()">Davic-6</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="../img/delete_icon.png" style="margin-left: 20px;" alt="editar" height="21px" width="21px"
+                onclick="deleteModel()">
+            <h6 style="width: 20%; margin-top: 30px; margin-left: 150px; margin-right: 0px;">Para añadir un nuevo
+                modelo, adjunte un excel</h6>
+            <input style="width: 20%; margin-left: 0px; margin-top: 30px;" type="file" name="adjunto"
+                accept=".xlsx,.xlsm" />
+            <button style="margin-top: 30px; margin-left: 20px; width: 80px; height: 80px;" onclick="loadModel()"
+                style="color: black;">Cargar modelo</button>
         </div>
-    </div>
+        <div class="row">
+            <button onclick="">Migrar</button>
+        </div>
+        <div class="row">
+            <div id="componentlist">
+                <table id="aeronaves" style="margin-left: 0px; margin-top: 10px;">
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div style="width: 100%;">
+                <nav id="incidencias">
+                    <ul id="myUL" style="max-height: 150px; padding-left: 0px;">
+                        <li><a href="#">Incidencia 1</a></li>
+                        <li><a href="#">Incidencia 2</a></li>
+                        <li><a href="#">Incidencia 3</a></li>
+                        <li><a href="#">Incidencia 4</a></li>
+                        <li><a href="#">Incidencia 5</a></li>
+                        <li><a href="#">Incidencia 6</a></li>
+                        <li><a href="#">Incidencia 7</a></li>
+                        <li><a href="#">Incidencia 8</a></li>
+                        <li><a href="#">Incidencia 9</a></li>
+                        <li><a href="#">Incidencia 10</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="../vendor/jquery/jquery.slim.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD93dDOWXwzcY8yJHBUyD_rRIDazxGJl80&callback=myMap"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="../vendor/jquery/jquery.slim.min.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD93dDOWXwzcY8yJHBUyD_rRIDazxGJl80&callback=myMap"></script>
 
 </body>
 
