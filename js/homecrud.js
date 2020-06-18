@@ -41,6 +41,7 @@ function loadModel() {
 }
 
 function hideModel() {
+    document.getElementById("aeronaves").innerHTML = '';
     document.getElementById("aeronaves").style.visibility = "hidden"
 }
 
