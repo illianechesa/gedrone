@@ -46,12 +46,13 @@ function hideModel() {
 }
 
 function loadMto() {
-    document.getElementById("vuelos").innerHTML = '<strong>Mantenimineto</strong> <tr> <th>Aeronave</th> <th>ID</th> <th>Numero Serie</th> <th>Horas funcionando</th> <th>Fecha próxima revision</th> </tr> <tr> <th>A1</th> <td>1</td> <td>34223</td> <td>12h 30min</td> <td>22/07/2020</td> </tr> <tr> <th>A2</th> <td>1</td> <td>3324</td> <td>1h 10min</td> <td>02/07/2020</td> </tr> <tr> <th>A3</th> <td>1</td> <td>1234</td> <td>30h 30min</td> <td>01/07/2020</td> </tr> <tr> <th>A4</th> <td>1</td> <td>2313</td> <td>1h 15min</td> <td>22/07/2020</td> </tr> <tr> <th>A5</th> <td>1</td> <td>78568</td> <td>2h 30min</td> <td>22/07/2020</td> </tr> <tr> <th><button onclick="hidemto()">Esconder MTO</button></th> </tr>';
-    document.getElementById("vuelos").style.visibility = "visible"
+    document.getElementById("persona").innerHTML = '<tr> <th>Instancia</th> <th>Horas vuelo</th> <th>Fecha revisión</th> <th>Mantenimiento</th> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px"> </td> </tr> <tr> <th><button onclick="hidemto()">Ocultar</button></th> </tr>';
+    document.getElementById("persona").style.visibility = "visible"
 }
 
 function hidemto() {
-    document.getElementById("vuelos").style.visibility = "hidden";
+    document.getElementById("persona").innerHTML = "";
+    document.getElementById("persona").style.visibility = "hidden";
 }
 
 function registrarvuelo() {
@@ -64,9 +65,15 @@ function listFlights() {
 }
 
 function hideFlights() {
+    document.getElementById("aeronaves").innerHTML = "";
     document.getElementById("aeronaves").style.visibility = "hidden"
 }
 
 function addProject() {
     window.open("addproject.html", "_self");
+}
+
+function showAddDrone() {
+    document.getElementById("vuelos").innerHTML = '<tr> <th>Modelo: </th> <td> <select name="modelo" id=""> <option>M1</option> <option>M2</option> <option>M3</option> <option>M4</option> <option>M5</option> </select> </td> </tr> <tr> <th>NºSerie: </th> <th><input type="text" name="modelo"></th> </tr> <tr> <th>PIN: </th> <th><input type="text" name="modelo"></th> </tr> <tr> <th>CE: </th> <th><input type="text" name="modelo"></th> </tr> <tr> <th>Matricula: </th> <th><input type="text" name="modelo"></th> </tr> <tr> <th>Estado: </th> <th> <select> <option name="operativo" value="operativo">Operativa</option> <option name="baja" value="baja">Baja</option> </select> </th> </tr> <tr> <th> <input type="submit" value="Guardar"> </th> <th> <input type="reset" value="Restaurar campos"> </th>';
+    document.getElementById("vuelos").style.visibility = "visible"
 }

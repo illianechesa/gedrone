@@ -63,15 +63,112 @@
     <!-- Page Content -->
     <div class="main">
         <div class="row">
+            <strong style="width: 100%;">Aeronaves</strong>
+            <div style="width: 35%; margin-top: 20px;">
+                <nav id="incidencias">
+                    <ul id="myUL" style="max-height: 150px; padding-left: 0px;">
+                        <li><a href="#" onclick="loadModel()">Alias 1</a></li>
+                        <li><a href="#" onclick="loadModel()">Alias 2</a></li>
+                        <li><a href="#" onclick="loadModel()">Alias 3</a></li>
+                        <li><a href="#" onclick="loadModel()">Alias 4</a></li>
+                        <li><a href="#" onclick="loadModel()">Alias 5</a></li>
+                        <li><a href="#" onclick="loadModel()">Alias 6</a></li>
+                        <li><a href="#" onclick="loadModel()">Alias 7</a></li>
+                        <li><a href="#" onclick="loadModel()">Alias 8</a></li>
+                        <li><a href="#" onclick="loadModel()">Alias 9</a></li>
+                        <li><a href="#" onclick="loadModel()">Alias 10</a></li>
+                    </ul>
+                </nav>
+                <button onclick="" style="margin-top: 20px;">Migrar</button>
+            </div>
+            <img src="../img/add_icon.png" style="margin-left: 20px;" alt="editar" height="21px" width="21px"
+                onclick="showAddDrone()">
+            <form action="drones.html" id="" method="post">
+                <table id="vuelos" style="margin-top: 20px; margin-left: 300px;">
+                    <!--  <tr>
+                        <th>Modelo: </th>
+                        <td>
+                            <select name="modelo" id="">
+                                <option>M1</option>
+                                <option>M2</option>
+                                <option>M3</option>
+                                <option>M4</option>
+                                <option>M5</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>NºSerie: </th>
+                        <th><input type="text" name="modelo"></th>
+                    </tr>
+                    <tr>
+                        <th>PIN: </th>
+                        <th><input type="text" name="modelo"></th>
+                    </tr>
+                    <tr>
+                        <th>CE: </th>
+                        <th><input type="text" name="modelo"></th>
+                    </tr>
+                    <tr>
+                        <th>Matricula: </th>
+                        <th><input type="text" name="modelo"></th>
+                    </tr>
+                    <tr>
+                        <th>Estado: </th>
+                        <th>
+                            <select>
+                                <option name="operativo" value="operativo">Operativa</option>
+                                <option name="baja" value="baja">Baja</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input type="submit" value="Guardar">
+                        </th>
+                        <th>
+                            <input type="reset" value="Restaurar campos">
+                        </th>
+
+                    </tr> -->
+                </table>
+            </form>
         </div>
-    </div>
+        <div class="row">
+            <div id="componentlist">
+                <table id="aeronaves" style="margin-left: 0px; margin-top: 10px;">
+                </table>
+            </div>
+            <div id="componentlist">
+                <table id="persona" style="margin-left: 0px; margin-top: 10px;">
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div style="width: 100%;">
+                <nav id="incidencias">
+                    <ul id="myUL" style="max-height: 150px; padding-left: 0px;">
+                        <li><a href="#">Incidencia 1</a></li>
+                        <li><a href="#">Incidencia 2</a></li>
+                        <li><a href="#">Incidencia 3</a></li>
+                        <li><a href="#">Incidencia 4</a></li>
+                        <li><a href="#">Incidencia 5</a></li>
+                        <li><a href="#">Incidencia 6</a></li>
+                        <li><a href="#">Incidencia 7</a></li>
+                        <li><a href="#">Incidencia 8</a></li>
+                        <li><a href="#">Incidencia 9</a></li>
+                        <li><a href="#">Incidencia 10</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="../vendor/jquery/jquery.slim.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD93dDOWXwzcY8yJHBUyD_rRIDazxGJl80&callback=myMap"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="../vendor/jquery/jquery.slim.min.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD93dDOWXwzcY8yJHBUyD_rRIDazxGJl80&callback=myMap"></script>
 
 </body>
 
