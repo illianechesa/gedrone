@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gedrone</title>
+
+    <!-- Favicons -->
+    <link href="../img/drone_icon.png" rel="icon">
+    <link href="../img/drone_icon.png" rel="apple-touch-icon">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="../js/filter.js"></script>
+    <script type="text/javascript" src="../js/homecrud.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="margin-left: -130px;">Gedrone</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto" style="margin-right: -130px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="projects.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="models.html">Modelos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="drones.html">Aeronaves</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="people.html">Personas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="maintenance.html">Mantenimiento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="main">
+        <div class="row">
+            <strong style="width: 100%; margin-bottom: 20px; margin-left: 2%;">Registro de vuelo</strong>
+            <table id="vuelos">
+                <tr>
+                    <th>Acción</th>
+                    <th>Fecha</th>
+                    <th>Documento</th>
+                </tr>
+                <tr>
+                    <th>Check-In</th>
+                    <td><input type="date"></td>
+                    <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td>
+                </tr>
+                <tr>
+                    <th>Log Vuelo</th>
+                    <td><input type="date"></td>
+                    <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td>
+                </tr>
+                <tr>
+                    <th>Check-Out</th>
+                    <td><input type="date"></td>
+                    <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td>
+                </tr>
+                <tr>
+                    <th>Log Payload</th>
+                    <td><input type="date"></td>
+                    <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <strong style="width: 100%; margin-bottom: 20px; margin-left: 2%;">Personas</strong>
+            <table id="vuelos">
+                <tr>
+                    <th>Persona</th>
+                    <th>Horas</th>
+                    <th>Rol</th>
+                </tr>
+                <tr>
+                    <td>Illia</td>
+                    <td>20</td>
+                    <td>Piloto</td>
+                </tr>
+                <tr>
+                    <td>Jesús</td>
+                    <td>5</td>
+                    <td>O.T</td>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <strong style="width: 100%; margin-bottom: 20px; margin-left: 2%;">Informe</strong>
+            <div style="margin-left: 2%; width: 20%;">
+                <p><textarea name="incidencias" cols="30" rows="5" placeholder="Incidencias..."></textarea></p>
+            </div>
+        </div>
+        <div class="row">
+            <button style="width: 10%; margin-bottom: 20px; margin-left: 2%;"
+                onclick="history.back()">Registrar</button>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.slim.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD93dDOWXwzcY8yJHBUyD_rRIDazxGJl80&callback=myMap"></script>
+
+</body>
+
+</html>
