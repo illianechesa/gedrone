@@ -46,7 +46,7 @@ function hideModel() {
 }
 
 function loadMto() {
-    document.getElementById("persona").innerHTML = '<tr> <th>Instancia</th> <th>Horas vuelo</th> <th>Fecha revisión</th> <th>Mantenimiento</th> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px"> </td> </tr> <tr> <th><button onclick="hidemto()">Ocultar</button></th> </tr>';
+    document.getElementById("persona").innerHTML = '<tr> <th>Instancia</th> <th>Horas vuelo</th> <th>Fecha revisión</th> <th>Mantenimiento</th> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> </td> </tr> <tr> <th><button onclick="hidemto()">Ocultar</button></th> </tr>';
     document.getElementById("persona").style.visibility = "visible"
 }
 
@@ -57,6 +57,16 @@ function hidemto() {
 
 function registrarvuelo() {
     window.open("registrarvuelo.html", "_self");
+}
+
+function loadHistory() {
+    document.getElementById("piloto").innerHTML = '<tr> <th>Fecha</th> <th>Comentario</th> <td></td> </tr> <tr> <td>22/07/20</td> <td>Se ha arreglado el ala</td> <td></td> </tr> <tr> <td>24/07/20</td> <td>Se ha revisado este componente</td> <td></td> </tr> <tr> <td><input type="text"></td> <td><input type="text"></td> <td><button onclick="">Guardar</button></td> </tr> <tr> <td colspan="3"><button onclick="hideHistory()">Ocultar</button></td> </tr>';
+    document.getElementById("piloto").style.visibility = "visible";
+}
+
+function hideHistory() {
+    document.getElementById("piloto").innerHTML = "";
+    document.getElementById("piloto").style.visibility = "hidden";
 }
 
 function listFlights() {
