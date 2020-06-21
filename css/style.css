@@ -39,7 +39,7 @@
   background-color: #f1f1f1;
 }
 
-#incidencias ul{
+#incidencias ul, #aeronavesp ul, #operacionesp ul, #vuelosp ul{
   list-style:none;
   max-height:100px;
   margin:0px;
@@ -48,10 +48,10 @@
   text-indent:10px;
 }
 
-#incidencias li{
+#incidencias li, #aeronavesp li, #operacionesp li, #vuelosp li{
   line-height:25px;
 }
 
-#incidencias li:nth-child(even){
+#incidencias li:nth-child(even), #aeronavesp li:nth-child(even), #operacionesp li:nth-child(even), #vuelosp li:nth-child(even){
   background:#ccc;
 }

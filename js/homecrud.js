@@ -91,3 +91,13 @@ function showAddDrone() {
 function addFlightToList() {
     window.open("addflight.html", "_self");
 }
+
+function showOperationList() {
+    document.getElementById("operacionesp").innerHTML = '<ul id="myUL" style="max-height: 150px; padding-left: 0px;"> <li><a href="#" onclick="showFlightList()">Operación 1</a></li> <li><a href="#" onclick="showFlightList()">Operación 2</a></li> <li><a href="#" onclick="showFlightList()">Operación 3</a></li> <li><a href="#" onclick="showFlightList()">Operación 4</a></li> <li><a href="#" onclick="showFlightList()">Operación 5</a></li> <li><a href="#" onclick="showFlightList()">Operación 6</a></li> <li><a href="#" onclick="showFlightList()">Operación 7</a></li> <li><a href="#" onclick="showFlightList()">Operación 8</a></li> <li><a href="#" onclick="showFlightList()">Operación 9</a></li> <li><a href="#" onclick="showFlightList()">Operación 10</a></li> </ul>';
+    document.getElementById("operacionesp").style.visibility = "visible"
+}
+
+function showFlightList() {
+    document.getElementById("vuelosp").innerHTML = '<ul id="myUL" style="max-height: 150px; padding-left: 0px;"> <li><a href="#">Vuelo 1</a></li> <li><a href="#">Vuelo 2</a></li> <li><a href="#">Vuelo 3</a></li> <li><a href="#">Vuelo 4</a></li> <li><a href="#">Vuelo 5</a></li> <li><a href="#">Vuelo 6</a></li> <li><a href="#">Vuelo 7</a></li> <li><a href="#">Vuelo 8</a></li> <li><a href="#">Vuelo 9</a></li> <li><a href="#">Vuelo 10</a></li> </ul>';
+    document.getElementById("vuelosp").style.visibility = "visible"
+}
