@@ -106,3 +106,8 @@ function openCalendar() {
     var dateControl = document.querySelector('input[type="date"]');
     dateControl.value = '2017-06-01';
 }
+
+function checkChecklist() {
+    document.getElementById("aeronaves").innerHTML = '<tr> <th> Acciones </th> <th></th> </tr> <tr> <td>¿Has hecho x?</td> <td><input type="checkbox"></td> </tr> <tr> <td>¿Has hecho y?</td> <td><input type="checkbox"></td> </tr> <tr> <td>¿Has hecho z?</td> <td><input type="checkbox"></td> </tr> <tr> <td>¿Has hecho t?</td> <td><input type="checkbox"></td> </tr> <tr> <td colspan="2"><button onclick="history.back()">Guardar</button></td> </tr>';
+    document.getElementById("aeronaves").style.visibility = "visible"
+}
