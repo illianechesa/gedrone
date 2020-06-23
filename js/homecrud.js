@@ -98,6 +98,6 @@ function showOperationList() {
 }
 
 function showFlightList() {
-    document.getElementById("vuelosp").innerHTML = '<ul id="myUL" style="max-height: 150px; padding-left: 0px;"> <li><a href="#">Vuelo 1</a></li> <li><a href="#">Vuelo 2</a></li> <li><a href="#">Vuelo 3</a></li> <li><a href="#">Vuelo 4</a></li> <li><a href="#">Vuelo 5</a></li> <li><a href="#">Vuelo 6</a></li> <li><a href="#">Vuelo 7</a></li> <li><a href="#">Vuelo 8</a></li> <li><a href="#">Vuelo 9</a></li> <li><a href="#">Vuelo 10</a></li> </ul>';
+    document.getElementById("vuelosp").innerHTML = '<ul id="myUL" style="max-height: 150px; padding-left: 0px;"> <li><a href="#"  onclick="addFlightToList()">Vuelo 1</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 2</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 3</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 4</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 5</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 6</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 7</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 8</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 9</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 10</a></li> </ul>';
     document.getElementById("vuelosp").style.visibility = "visible"
 }
