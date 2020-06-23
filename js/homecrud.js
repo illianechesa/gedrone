@@ -46,7 +46,7 @@ function hideModel() {
 }
 
 function loadMto() {
-    document.getElementById("persona").innerHTML = '<tr> <th>Instancia</th> <th>Horas vuelo</th> <th>Fecha revisión</th> <th>Mantenimiento</th> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td>07/07/2020</td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> </td> </tr> <tr> <th><button onclick="hidemto()">Ocultar</button></th> </tr>';
+    document.getElementById("persona").innerHTML = '<tr> <th>Instancia</th> <th>Horas vuelo</th> <th>Fecha revisión</th> <th>Mantenimiento</th> </tr> <tr> <th>132</th> <td>12 horas</td> <td><input type="date"></td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> <img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="15px" width="15px"onclick="openCalendar()">  </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td><input type="date"></td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> <img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="15px" width="15px"onclick="openCalendar()"></td> </tr> <tr> <th>132</th> <td>12 horas</td> <td><input type="date"></td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> <img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="15px" width="15px"onclick="openCalendar()"> </td> </tr> <tr> <th>132</th> <td>12 horas</td> <td><input type="date"></td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> <img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="15px" width="15px"onclick="openCalendar()"></td> </tr> <tr> <th>132</th> <td>12 horas</td> <td><input type="date"></td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"><img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="15px" width="15px"onclick="openCalendar()"> </td> </tr> <tr> <th><button onclick="hidemto()">Ocultar</button></th> </tr>';
     document.getElementById("persona").style.visibility = "visible"
 }
 
@@ -60,7 +60,7 @@ function registrarvuelo() {
 }
 
 function loadHistory() {
-    document.getElementById("piloto").innerHTML = '<tr> <th>Fecha</th> <th>Comentario</th> <td></td> </tr> <tr> <td>22/07/20</td> <td>Se ha arreglado el ala</td> <td></td> </tr> <tr> <td>24/07/20</td> <td>Se ha revisado este componente</td> <td></td> </tr> <tr> <td><input type="text"></td> <td><input type="text"></td> <td><button onclick="">Guardar</button></td> </tr> <tr> <td colspan="3"><button onclick="hideHistory()">Ocultar</button></td> </tr>';
+    document.getElementById("piloto").innerHTML = '<tr> <th>Fecha</th><th>Tipo</th> <th>Comentario</th> <td></td> </tr> <tr> <td>22/07/20</td><td><select><option>Revision</option><option>Sustitucion</option><option>Otro</option></select></td> <td>Se ha arreglado el ala</td> <td></td> </tr> <tr> <td>24/07/20</td> <td><select><option>Revision</option><option>Sustitucion</option><option>Otro</option></select></td><td>Se ha revisado este componente</td> <td></td> </tr> <tr> <td><input type="date"></td><td><select><option>Revision</option><option>Sustitucion</option><option>Otro</option></select></td> <td><input type="text"></td> <td><button onclick="">Guardar</button></td> </tr> <tr> <td colspan="3"><button onclick="hideHistory()">Ocultar</button></td> </tr>';
     document.getElementById("piloto").style.visibility = "visible";
 }
 
@@ -100,4 +100,9 @@ function showOperationList() {
 function showFlightList() {
     document.getElementById("vuelosp").innerHTML = '<ul id="myUL" style="max-height: 150px; padding-left: 0px;"> <li><a href="#"  onclick="addFlightToList()">Vuelo 1</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 2</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 3</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 4</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 5</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 6</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 7</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 8</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 9</a></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 10</a></li> </ul>';
     document.getElementById("vuelosp").style.visibility = "visible"
+}
+
+function openCalendar() {
+    var dateControl = document.querySelector('input[type="date"]');
+    dateControl.value = '2017-06-01';
 }
