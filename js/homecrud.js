@@ -60,7 +60,7 @@ function registrarvuelo() {
 }
 
 function loadHistory() {
-    document.getElementById("piloto").innerHTML = '<tr> <th>Fecha</th><th>Tipo</th> <th>Comentario</th> <td></td> </tr> <tr> <td>22/07/20</td><td><select><option>Revision</option><option>Sustitucion</option><option>Otro</option></select></td> <td>Se ha arreglado el ala</td> <td></td> </tr> <tr> <td>24/07/20</td> <td><select><option>Revision</option><option>Sustitucion</option><option>Otro</option></select></td><td>Se ha revisado este componente</td> <td></td> </tr> <tr> <td><input type="date"></td><td><select><option>Revision</option><option>Sustitucion</option><option>Otro</option></select></td> <td><input type="text"></td> <td><button onclick="">Guardar</button></td> </tr> <tr> <td colspan="3"><button onclick="hideHistory()">Ocultar</button></td> </tr>';
+    document.getElementById("piloto").innerHTML = '<tr> <th>Fecha</th><th>Tipo</th> <th>Comentario</th> <td></td> </tr> <tr> <td>22/07/20</td><td>Revision</td> <td>Se ha arreglado el ala</td> <td></td> </tr> <tr> <td>24/07/20</td> <td>Sustitucion</td><td>Se ha revisado este componente</td> <td></td> </tr> <tr> <td><input type="date"></td><td><select><option>Revision</option><option>Sustitucion</option><option>Otro</option></select></td> <td><input type="text"></td> <td><button onclick="">Guardar</button></td> </tr> <tr> <td colspan="3"><button onclick="hideHistory()">Ocultar</button></td> </tr>';
     document.getElementById("piloto").style.visibility = "visible";
 }
 
