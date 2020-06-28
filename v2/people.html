@@ -62,43 +62,74 @@
 
     <!-- Page Content -->
     <div class="main">
-        <h5>Persona</h5>
-        <div class="row">
-            <table id="persona">
-                <tr>
-                    <th>Rol: </th>
-                    <td>Piloto </td>
-                </tr>
-                <tr>
-                    <th>Nombre: </th>
-                    <td>Illia</td>
-                </tr>
-            </table>
+        <div class="row" style="margin-left:0px;">
+            <a href="" onclick="showPiloto()">Piloto</a>
+            <a href="" onclick="showAlumno()" style="margin-left: 20px;">Alumno</a>
+            <a href="" style="margin-left: 20px;">Instructor</a>
+            <a href="" style="margin-left: 20px;">Mecanico</a>
+            <a href="" style="margin-left: 20px;">Piloto</a>
         </div>
-        <h5>Piloto</h5>
-        <div class="row">
-            <table id="piloto">
-                <tr>
-                    <th>Carnet: </th>
-                    <td>21312</td>
-                </tr>
-                <tr>
-                    <th>Certificados: </th>
-                    <td>EIS-123</td>
-                </tr>
-                <tr>
-                    <th>Persisos: </th>
-                    <td>GR11</td>
-                </tr>
-                <tr>
-                    <th>Formación: </th>
-                    <td>Prácticas</td>
-                </tr>
-            </table>
+        <div id="piloto">
+            <h5>Persona</h5>
+            <div class="row">
+                <table id="persona">
+                    <tr>
+                        <th>Rol: </th>
+                        <td>Piloto </td>
+                    </tr>
+                    <tr>
+                        <th>Nombre: </th>
+                        <td>Illia</td>
+                    </tr>
+                </table>
+            </div>
+            <h5>Piloto</h5>
+            <div class="row">
+                <table id="piloto">
+                    <tr>
+                        <th>Carnet: </th>
+                        <td>21312</td>
+                    </tr>
+                    <tr>
+                        <th>Certificados: </th>
+                        <td><a href="">EIS-123</a></td>
+                    </tr>
+                    <tr>
+                        <th>Persisos: </th>
+                        <td><a href="">GR11</a></td>
+                    </tr>
+                    <tr>
+                        <th>Formación: </th>
+                        <td>Prácticas</td>
+                    </tr>
+                    <tr>
+                        <th>Aeronaves: </th>
+                        <td>Marvin5, DJI Phantom</td>
+                    </tr>
+                    <tr>
+                        <th>Horas pilotadas: </th>
+                        <td>40 horas</td>
+                    </tr>
+                </table>
+                <img src="../img/flight_hours.png" alt="graph" style="width: 40%; height: 40%; margin-left: 2%;">
+            </div>
+            <h5>Documentación</h5>
+            <div class="row">
+                <table id="piloto">
+                    <tr>
+                        <th>Seguro: </th>
+                        <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td>
+                    </tr>
+                    <tr>
+                        <th>Certificados: </th>
+                        <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                <a href="javascript:history.back()"> Volver Atrás</a>
+            </p>
         </div>
-        <p>
-            <a href="javascript:history.back()"> Volver Atrás</a>
-        </p>
     </div>
 
 
