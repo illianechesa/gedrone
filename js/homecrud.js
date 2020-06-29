@@ -115,13 +115,43 @@ function checkChecklist() {
 function showPiloto() {
     document.getElementById("menu2").innerHTML = "";
     document.getElementById("menu2").style.visibility = "hidden";
-    document.getElementById("menu1").innerHTML = '<h5>Persona</h5> <div class="row"> <table id="persona"> <tr> <th>Rol: </th> <td>Piloto </td> </tr> <tr> <th>Nombre: </th> <td>Illia</td> </tr> </table> </div> <h5>Piloto</h5> <div class="row"> <table id="piloto"> <tr> <th>Carnet: </th> <td>21312</td> </tr> <tr> <th>Certificados: </th> <td><a href="">EIS-123</a></td> </tr> <tr> <th>Persisos: </th> <td><a href="">GR11</a></td> </tr> <tr> <th>Formación: </th> <td>Prácticas</td> </tr> <tr> <th>Aeronaves: </th> <td>Marvin5, DJI Phantom</td> </tr> <tr> <th>Horas pilotadas: </th> <td>40 horas</td> </tr> </table> <img src="../img/flight_hours.png" alt="graph" style="width: 30%; height: 30%; margin-left: 2%;"> </div> <h5>Documentación</h5> <div class="row"> <table id="piloto"> <tr> <th>Seguro: </th> <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td> </tr> <tr> <th>Certificados: </th> <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td> </tr> </table> </div> <p> <a href="javascript:history.back()"> Volver Atrás</a> </p>';
+    document.getElementById("menu3").innerHTML = "";
+    document.getElementById("menu3").style.visibility = "hidden";
+    document.getElementById("menu4").innerHTML = "";
+    document.getElementById("menu4").style.visibility = "hidden";
+    document.getElementById("menu1").innerHTML = '<h5>Persona</h5> <div class="row"> <table id="persona"> <tr> <th>Rol: </th> <td>Piloto </td> </tr> <tr> <th>Nombre: </th> <td>Illia</td> </tr> </table> </div> <h5>Piloto</h5> <div class="row"> <table id="piloto"> <tr> <th>Carnet: </th> <td>21312</td> </tr> <tr> <th>Certificados: </th> <td><a href="">EIS-123</a></td> </tr> <tr> <th>Persisos: </th> <td><a href="">GR11</a></td> </tr> <tr> <th>Formación: </th> <td>Prácticas</td> </tr> <tr> <th>Aeronaves: </th> <td>Marvin5, DJI Phantom</td> </tr> <tr> <th>Horas pilotadas: </th> <td>40 horas</td> </tr> </table> <img src="../img/flight_hours.png" alt="graph" style="width: 30%; height: 30%; margin-left: 2%;"> </div> <h5>Documentación</h5> <div class="row"> <table id="piloto"> <tr> <th>Seguro: </th> <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td> </tr> <tr> <th>Certificados: </th> <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td> </tr> </table> </div>';
     document.getElementById("menu1").style.visibility = "visible";
 }
 
 function showAlumno() {
     document.getElementById("menu1").innerHTML = "";
     document.getElementById("menu1").style.visibility = "hidden";
-    document.getElementById("menu2").innerHTML = '<h5>Persona</h5> <div class="row"> <table id="persona"> <tr> <th>Rol: </th> <td>Alumno </td> </tr> <tr> <th>Nombre: </th> <td>Jesús</td> </tr> </table> </div> <h5>Alumno</h5> <div class="row"> <table id="piloto"> <tr> <th>Carnet: </th> <td>21312</td> </tr> <tr> <th>Certificados: </th> <td><a href="">EIS-123</a></td> </tr> <tr> <th>Persisos: </th> <td><a href="">GR11</a></td> </tr> <tr> <th>Formación: </th> <td>Prácticas</td> </tr> <tr> <th>Aeronaves: </th> <td>Marvin5, DJI Phantom</td> </tr> <tr> <th>Maniobra: </th> <td>Aterrizajes</td> </tr> <tr> <th>Referencia: </th> <td>23123</td> </tr> </table> <img src="../img/alumno_graph.jpg" alt="graph" style="width: 25%; height: 25%; margin-left: 2%;"> </div> <p> <a href="javascript:history.back()"> Volver Atrás</a> </p>';
+    document.getElementById("menu3").innerHTML = "";
+    document.getElementById("menu3").style.visibility = "hidden";
+    document.getElementById("menu4").innerHTML = "";
+    document.getElementById("menu4").style.visibility = "hidden";
+    document.getElementById("menu2").innerHTML = '<h5>Persona</h5> <div class="row"> <table id="persona"> <tr> <th>Rol: </th> <td>Alumno </td> </tr> <tr> <th>Nombre: </th> <td>Jesús</td> </tr> </table> </div> <h5>Alumno</h5> <div class="row"> <table id="piloto"> <tr> <th>Carnet: </th> <td>21312</td> </tr> <tr> <th>Certificados: </th> <td><a href="">EIS-123</a></td> </tr> <tr> <th>Persisos: </th> <td><a href="">GR11</a></td> </tr> <tr> <th>Formación: </th> <td>Prácticas</td> </tr> <tr> <th>Aeronaves: </th> <td>Marvin5, DJI Phantom</td> </tr> <tr> <th>Maniobra: </th> <td>Aterrizajes</td> </tr> <tr> <th>Referencia: </th> <td>23123</td> </tr> </table> <img src="../img/alumno_graph.jpg" alt="graph" style="width: 25%; height: 25%; margin-left: 2%;"> </div> ';
     document.getElementById("menu2").style.visibility = "visible";
+}
+
+function showInstructor() {
+    document.getElementById("menu1").innerHTML = "";
+    document.getElementById("menu1").style.visibility = "hidden";
+    document.getElementById("menu2").innerHTML = "";
+    document.getElementById("menu2").style.visibility = "hidden";
+    document.getElementById("menu4").innerHTML = "";
+    document.getElementById("menu4").style.visibility = "hidden";
+    document.getElementById("menu3").innerHTML = '<h5>Persona</h5> <div class="row"> <table id="persona"> <tr> <th>Rol: </th> <td>Piloto </td> </tr> <tr> <th>Nombre: </th> <td>Illia</td> </tr> </table> </div> <h5>Piloto</h5> <div class="row"> <table id="piloto"> <tr> <th>Carnet: </th> <td>21312</td> </tr> <tr> <th>Certificados: </th> <td><a href="">EIS-123</a></td> </tr> <tr> <th>Persisos: </th> <td><a href="">GR11</a></td> </tr> <tr> <th>Formación: </th> <td>Prácticas</td> </tr> <tr> <th>Aeronaves: </th> <td>Marvin5, DJI Phantom</td> </tr> <tr> <th>Horas pilotadas: </th> <td>40 horas</td> </tr> </table> <img src="../img/flight_hours.png" alt="graph" style="width: 30%; height: 30%; margin-left: 2%;"> </div> <h5>Documentación</h5> <div class="row"> <table id="piloto"> <tr> <th>Seguro: </th> <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td> </tr> <tr> <th>Certificados: </th> <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td> </tr> </table> </div>';
+    document.getElementById("menu3").style.visibility = "visible";
+}
+
+function showMecanico() {
+    document.getElementById("menu1").innerHTML = "";
+    document.getElementById("menu1").style.visibility = "hidden";
+    document.getElementById("menu2").innerHTML = "";
+    document.getElementById("menu2").style.visibility = "hidden";
+    document.getElementById("menu3").innerHTML = "";
+    document.getElementById("menu3").style.visibility = "hidden";
+    document.getElementById("menu4").innerHTML = '<h5>Persona</h5> <div class="row"> <table id="persona"> <tr> <th>Rol: </th> <td>Mecánico </td> </tr> <tr> <th>Nombre: </th> <td>Javier</td> </tr> </table> </div> <h5>Mecánico</h5> <div class="row"> <table id="piloto"> <tr> <th>Carnet: </th> <td>21312</td> </tr> <tr> <th>Certificados: </th> <td><a href="">EIS-123</a></td> </tr> <tr> <th>Persisos: </th> <td><a href="">GR11</a></td> </tr> <tr> <th>Formación: </th> <td>Prácticas</td> </tr> <tr> <th>Aeronaves: </th> <td>Marvin5, DJI Phantom</td> </tr> <tr> <th>Maniobra: </th> <td>Aterrizajes</td> </tr> <tr> <th>Referencia: </th> <td>23123</td> </tr> </table> <img src="../img/alumno_graph.jpg" alt="graph" style="width: 25%; height: 25%; margin-left: 2%;"> </div>';
+    document.getElementById("menu4").style.visibility = "visible";
 }
