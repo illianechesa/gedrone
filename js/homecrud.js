@@ -48,6 +48,19 @@ function loadModel() {
     }
 }
 
+function loadModelNoMto() {
+    document.getElementById("aeronaves").innerHTML = '<tr><th>Grupo</th> <th>Componente</th> <th>ID</th> </tr> <tr> <th>GF</th> <td><a href="#" >Ala</a></td> <td>1</td> </tr> <tr> <th>M</th> <td><a href="#" >Motor 1</a></td> <td>2</td> </tr> <tr> <th>M</th> <td><a href="#" >Motor 2</a></td> <td>3</td> </tr> <tr> <th>V</th> <td><a href="#" >Hélice</a></td> <td>4</td> </tr> <tr> <th>M</th> <td><a href="#" >Corcho</a></td> <td>5</td> </tr> <tr><td colspan="3"></td></tr>';
+    var x = document.getElementById("aeronaves");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}
+
 function hideModel() {
     document.getElementById("aeronaves").innerHTML = '';
     document.getElementById("aeronaves").style.visibility = "hidden"
@@ -199,6 +212,19 @@ function showhidePeople() {
 
 function showhidemodels() {
     var x = document.getElementById("tablamodelos");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}
+
+function addNewModel() {
+    var x = document.getElementById("newmodel");
+    x.innerHTML = '<h6 style="width: 40%; margin-top: 30px; margin-left: 150px; margin-right: 0px;">Para añadir un nuevo modelo, adjunte un excel</h6> <input style="width: 80%; margin-left: 0px; margin-top: 30px;" type="file" name="adjunto" accept=".xlsx,.xlsm" /> <button style="margin-top: 30px; margin-left: 0px; width: 80px; height: 30px;" onclick="loadModel()" style="color: black;">Cargar</button>';
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
         x.style.display = "block"
