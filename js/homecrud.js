@@ -234,3 +234,9 @@ function addNewModel() {
         x.style.display = "none";
     }
 }
+
+function migrate() {
+    var person = prompt("A que modelo quieres migrar?");
+    alert("Migrado correctamente");
+
+}
