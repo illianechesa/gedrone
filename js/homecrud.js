@@ -176,3 +176,15 @@ function showAddPersona() {
     document.getElementById("menu5").innerHTML = '<h5>Persona</h5> <div class="row"> <table id="persona"> <tr> <th>Rol: </th> <td> <select name="" id=""> <option value="">Piloto</option> <option value="">Alumno</option> <option value="">Instructor</option> <option value="">Mecánico</option> </select> </td> </tr> <tr> <th>Nombre: </th> <td><input type="text"></td> </tr> </table> </div> <h5>Datos</h5> <div class="row"> <table id="piloto"> <tr> <th>Carnet: </th> <td><input type="text"></td> </tr> <tr> <th>Certificados: </th> <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td> </tr> <tr> <th>Persisos: </th> <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td> </tr> <tr> <th>Formación: </th> <td><input type="text"></td> </tr> <tr> <th>Aeronaves: </th> <td><input type="text"></td> </tr> <tr> <th>Horas pilotadas: </th> <td><input type="text"></td> </tr> </table> </div> <h5>Documentación</h5> <div class="row"> <table id="piloto"> <tr> <th>Seguro: </th> <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td> </tr> <tr> <th>Certificados: </th> <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td> </tr> </table> </div> <div> <button type="submit" onclick="window.history.back()">Guardar</button> </div>';
     document.getElementById("menu5").style.visibility = "visible";
 }
+
+function showhidePeople() {
+    var x = document.getElementById("milista");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}
