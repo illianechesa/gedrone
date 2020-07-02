@@ -238,5 +238,4 @@ function addNewModel() {
 function migrate() {
     var person = prompt("A que modelo quieres migrar?");
     alert("Migrado correctamente");
-
 }

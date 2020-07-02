@@ -58,10 +58,10 @@
 
 #tablamodelos {
   overflow:auto;
-  max-height:100px;
+  max-height:200px;
 }
 #tablamodelos table {
   background-color:lightgray;
   overflow:auto;
-  max-height:100px;
+  max-height:200px;
 }
