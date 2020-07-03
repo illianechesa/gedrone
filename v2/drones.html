@@ -67,21 +67,103 @@
                     style="color: black;">Aeronaves</a><img src="../img/add_icon.png" style="margin-left: 20px;"
                     alt="editar" height="23px" width="23px" onclick="showAddDrone()">
             </strong>
-            <div id="tablamodelos" style="width: 35%;">
-                <nav id="incidencias">
-                    <ul id="myUL" style="max-height: 150px; padding-left: 0px;">
-                        <li><a href="#" onclick="loadModel()">Alias 1</a></li>
-                        <li><a href="#" onclick="loadModel()">Alias 2</a></li>
-                        <li><a href="#" onclick="loadModel()">Alias 3</a></li>
-                        <li><a href="#" onclick="loadModel()">Alias 4</a></li>
-                        <li><a href="#" onclick="loadModel()">Alias 5</a></li>
-                        <li><a href="#" onclick="loadModel()">Alias 6</a></li>
-                        <li><a href="#" onclick="loadModel()">Alias 7</a></li>
-                        <li><a href="#" onclick="loadModel()">Alias 8</a></li>
-                        <li><a href="#" onclick="loadModel()">Alias 9</a></li>
-                        <li><a href="#" onclick="loadModel()">Alias 10</a></li>
-                    </ul>
-                </nav>
+            <div id="tablamodelos">
+                <table id="vuelos" style="margin-left: 0px;">
+                    <tr>
+                        <th>Aeronave</th>
+                        <th>Modelo</th>
+                        <th>Estado</th>
+                        <th>Horas de vuelo</th>
+                        <th>Mantenimiento</th>
+                        <th>Editar</th>
+                        <th>Desactivar</th>
+                    </tr>
+                    <tr>
+                        <th><a href="#" onclick="loadModel()" style="color: black;">Águila Verde</a></th>
+                        <th>Marvin5</th>
+                        <th><img src="../img/check_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
+                                width="13px"></th>
+                        <th>20 horas</th>
+                        <th><img src="../img/mantenimiento_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px"></th>
+                        <th><img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"></th>
+                        <th><img src="../img/deactivate_icon.png" style="margin-left: 20px;" alt="editar" height="13px">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><a href="#" onclick="loadModel()" style="color: black;">Batdron</a></th>
+                        <th>Marvin5</th>
+                        <th><img src="../img/check_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
+                                width="13px"></th>
+                        <th>20 horas</th>
+                        <th><img src="../img/mantenimiento_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px"></th>
+                        <th><img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"></th>
+                        <th><img src="../img/deactivate_icon.png" style="margin-left: 20px;" alt="editar" height="13px">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><a href="#" onclick="loadModel()" style="color: black;">Bala</a></th>
+                        <th>Marvin5</th>
+                        <th><img src="../img/check_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
+                                width="13px"></th>
+                        <th>20 horas</th>
+                        <th><img src="../img/mantenimiento_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px"></th>
+                        <th><img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"></th>
+                        <th><img src="../img/deactivate_icon.png" style="margin-left: 20px;" alt="editar" height="13px">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><a href="#" onclick="loadModel()" style="color: black;">Lucero</a></th>
+                        <th>Marvin5</th>
+                        <th><img src="../img/check_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
+                                width="13px"></th>
+                        <th>20 horas</th>
+                        <th><img src="../img/mantenimiento_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px"></th>
+                        <th><img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"></th>
+                        <th><img src="../img/deactivate_icon.png" style="margin-left: 20px;" alt="editar" height="13px">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><a href="#" onclick="loadModel()" style="color: black;">Camuflado</a></th>
+                        <th>Marvin5</th>
+                        <th><img src="../img/check_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
+                                width="13px"></th>
+                        <th>20 horas</th>
+                        <th><img src="../img/mantenimiento_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px"></th>
+                        <th><img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"></th>
+                        <th><img src="../img/deactivate_icon.png" style="margin-left: 20px;" alt="editar" height="13px">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><a href="#" onclick="loadModel()" style="color: black;">Tortuga</a></th>
+                        <th>Marvin5</th>
+                        <th><img src="../img/check_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
+                                width="13px"></th>
+                        <th>20 horas</th>
+                        <th><img src="../img/mantenimiento_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px"></th>
+                        <th><img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"></th>
+                        <th><img src="../img/deactivate_icon.png" style="margin-left: 20px;" alt="editar" height="13px">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><a href="#" onclick="loadModel()" style="color: black;">Pesado</a></th>
+                        <th>Marvin5</th>
+                        <th><img src="../img/check_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
+                                width="13px"></th>
+                        <th>20 horas</th>
+                        <th><img src="../img/mantenimiento_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px"></th>
+                        <th><img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"></th>
+                        <th><img src="../img/deactivate_icon.png" style="margin-left: 20px;" alt="editar" height="13px">
+                        </th>
+                    </tr>
+
+                </table>
             </div>
             <form action="drones.html" id="" method="post">
                 <table id="vuelos" style="margin-top: 20px; margin-left: 300px;">
