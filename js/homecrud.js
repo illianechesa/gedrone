@@ -199,7 +199,7 @@ function showAddPersona() {
 }
 
 function showhidePeople() {
-    var x = document.getElementById("milista");
+    var x = document.getElementById("tablamodelos");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
         x.style.display = "block"
