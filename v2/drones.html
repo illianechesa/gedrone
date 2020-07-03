@@ -63,8 +63,11 @@
     <!-- Page Content -->
     <div class="main">
         <div class="row">
-            <strong style="width: 100%;">Aeronaves</strong>
-            <div style="width: 35%; margin-top: 20px;">
+            <strong style="width: 100%; margin-bottom: 20px;"><a href="#" onclick="showhideDrones()"
+                    style="color: black;">Aeronaves</a><img src="../img/add_icon.png" style="margin-left: 20px;"
+                    alt="editar" height="23px" width="23px" onclick="showAddDrone()">
+            </strong>
+            <div id="tablamodelos" style="width: 35%;">
                 <nav id="incidencias">
                     <ul id="myUL" style="max-height: 150px; padding-left: 0px;">
                         <li><a href="#" onclick="loadModel()">Alias 1</a></li>
@@ -79,10 +82,7 @@
                         <li><a href="#" onclick="loadModel()">Alias 10</a></li>
                     </ul>
                 </nav>
-                <button onclick="" style="margin-top: 20px;">Migrar</button>
             </div>
-            <img src="../img/add_icon.png" style="margin-left: 20px;" alt="editar" height="21px" width="21px"
-                onclick="showAddDrone()">
             <form action="drones.html" id="" method="post">
                 <table id="vuelos" style="margin-top: 20px; margin-left: 300px;">
                     <!--  <tr>
