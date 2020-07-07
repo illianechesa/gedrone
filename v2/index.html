@@ -63,7 +63,7 @@
     <!-- Page Content -->
     <div class="main">
         <div class="row">
-            <strong style="width: 100%; margin-bottom: 10px; margin-left: 25px;"><a href="#" onclick=""
+            <strong style="width: 100%; margin-bottom: 0px; margin-left: 25px;"><a href="#" onclick=""
                     style="color: black;">Proyectos</a><img src="../img/add_icon.png" style="margin-left: 20px;"
                     alt="editar" height="23px" width="23px" onclick="addProject()">
             </strong>
@@ -102,13 +102,13 @@
                         <td>Objetivo</td>
                     </tr>
                     <tr>
-                        <td><a href="projects.html">Proyecto 3</a></td>
+                        <td><a href="projects.html">Proyecto 5</a></td>
                         <td>Despegues</td>
                         <td>Nasertic</td>
                         <td>Objetivo</td>
                     </tr>
                     <tr>
-                        <td><a href="projects.html">Proyecto 3</a></td>
+                        <td><a href="projects.html">Proyecto 6</a></td>
                         <td>Despegues</td>
                         <td>Nasertic</td>
                         <td>Objetivo</td>
@@ -119,36 +119,61 @@
             <img src="../img/bar_graph.jpg" alt="graph" style="width: 22%; height: 10%; margin-left: 5%;">
         </div>
         <div class="row">
-            <strong style="width: 100%; margin-bottom: 0px; margin-left: 2%;">Incidencias</strong>
+            <strong style="width: 100%; margin-bottom: 0px; margin-left: 2%; margin-top: 0px;">Incidencias</strong>
         </div>
-        <div>
-            <input style="margin-left: 4%; width: 94%; margin-bottom: 0px;" type="text" id="inputIncidents"
-                onkeyup="searchIncidents()" placeholder="Buscar incidencias...">
-            <nav id="incidencias" style="margin-left: 25px;">
-                <ul id="myUL">
-                    <li><a href="#">Incidencia
-                            1</a>&nbsp&nbsp&nbsp&nbspTipo&nbsp&nbsp&nbsp&nbsp23/12/1998&nbsp&nbsp&nbsp&nbspResuelta</li>
-                    <li><a href="#">Incidencia
-                            2</a>&nbsp&nbsp&nbsp&nbspTipo&nbsp&nbsp&nbsp&nbsp23/12/1998&nbsp&nbsp&nbsp&nbspResuelta</li>
-                    <li><a href="#">Incidencia
-                            3</a>&nbsp&nbsp&nbsp&nbspTipo&nbsp&nbsp&nbsp&nbsp23/12/1998&nbsp&nbsp&nbsp&nbspResuelta</li>
-                    <li><a href="#">Incidencia
-                            4</a>&nbsp&nbsp&nbsp&nbspTipo&nbsp&nbsp&nbsp&nbsp23/12/1998&nbsp&nbsp&nbsp&nbspResuelta</li>
-                    <li><a href="#">Incidencia
-                            5</a>&nbsp&nbsp&nbsp&nbspTipo&nbsp&nbsp&nbsp&nbsp23/12/1998&nbsp&nbsp&nbsp&nbspResuelta</li>
-                    <li><a href="#">Incidencia
-                            6</a>&nbsp&nbsp&nbsp&nbspTipo&nbsp&nbsp&nbsp&nbsp23/12/1998&nbsp&nbsp&nbsp&nbspResuelta</li>
-                    <li><a href="#">Incidencia
-                            7</a>&nbsp&nbsp&nbsp&nbspTipo&nbsp&nbsp&nbsp&nbsp23/12/1998&nbsp&nbsp&nbsp&nbspResuelta</li>
-                    <li><a href="#">Incidencia
-                            8</a>&nbsp&nbsp&nbsp&nbspTipo&nbsp&nbsp&nbsp&nbsp23/12/1998&nbsp&nbsp&nbsp&nbspResuelta</li>
-                    <li><a href="#">Incidencia
-                            9</a>&nbsp&nbsp&nbsp&nbspTipo&nbsp&nbsp&nbsp&nbsp23/12/1998&nbsp&nbsp&nbsp&nbspResuelta</li>
-                    <li><a href="#">Incidencia
-                            10</a>&nbsp&nbsp&nbsp&nbspTipo&nbsp&nbsp&nbsp&nbsp23/12/1998&nbsp&nbsp&nbsp&nbspResuelta
-                    </li>
-                </ul>
-            </nav>
+        <input style="margin-left: 4%; width: 94%; margin-bottom: 5px;" type="text" id="inputIncidents"
+            onkeyup="searchIncidents()" placeholder="Buscar incidencias...">
+        <div id="tablaproyectos">
+            <table style="width: 80%; margin-left: 50px;" id="vuelos">
+                <tr>
+                    <th>Incidencia</th>
+                    <th>Tipo</th>
+                    <th>Fecha</th>
+                    <th>Estado</th>
+                </tr>
+                <tr>
+                    <td>Primera</td>
+                    <td>Avería</td>
+                    <td>07/07/2020</td>
+                    <td>Reparar</td>
+                </tr>
+                <tr>
+                    <td>Segunda</td>
+                    <td>Avería</td>
+                    <td>07/07/2020</td>
+                    <td>Reparar</td>
+                </tr>
+                <tr>
+                    <td>Tercera</td>
+                    <td>Avería</td>
+                    <td>07/07/2020</td>
+                    <td>Reparar</td>
+                </tr>
+                <tr>
+                    <td>Cuarta</td>
+                    <td>Avería</td>
+                    <td>07/07/2020</td>
+                    <td>Reparar</td>
+                </tr>
+                <tr>
+                    <td>Quinta</td>
+                    <td>Avería</td>
+                    <td>07/07/2020</td>
+                    <td>Reparar</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>Avería</td>
+                    <td>07/07/2020</td>
+                    <td>Reparar</td>
+                </tr>
+                <tr>
+                    <td>Séptima</td>
+                    <td>Avería</td>
+                    <td>07/07/2020</td>
+                    <td>Reparar</td>
+                </tr>
+            </table>
         </div>
         <div class="row">
             <strong style="width: 100%; margin-bottom: 0px; margin-left: 2%;">Avisos</strong>
