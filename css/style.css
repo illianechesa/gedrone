@@ -60,8 +60,18 @@
   overflow:auto;
   max-height:200px;
 }
-#tablamodelos table {
+#tablamodelos table{
   background-color:lightgray;
   overflow:auto;
   max-height:200px;
+}
+
+#tablaproyectos {
+  overflow:auto;
+  max-height:150px;
+}
+#tablaproyectos table{
+  background-color:lightgray;
+  overflow:auto;
+  max-height:150px;
 }
