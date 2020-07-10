@@ -147,55 +147,88 @@
                     <td><button onclick="addIncident()">Guardar</button></td>
                 </tr>
                 <tr>
-                    <td>Primera</td>
+                    <td onclick="showIncidentHistory()"><button id="myBtn"
+                            style="width: 100px; height: 30px;">Primera</button></td>
                     <td>Proyecto</td>
                     <td>07/07/2020</td>
                     <td>Reparar</td>
-                    <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
+                            onclick="addIncident()"></td>
                 </tr>
                 <tr>
-                    <td>Segunda</td>
+                    <td onclick="showIncidentHistory()"><button id="myBtn"
+                            style="width: 100px; height: 30px;">Segunda</button></td>
                     <td>Proyecto</td>
                     <td>07/07/2020</td>
                     <td>Reparar</td>
-                    <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
+                            onclick="addIncident()"></td>
                 </tr>
                 <tr>
-                    <td>Tercera</td>
+                    <td onclick="showIncidentHistory()"><button id="myBtn"
+                            style="width: 100px; height: 30px;">Tercera</button></td>
                     <td>Proyecto</td>
                     <td>07/07/2020</td>
                     <td>Reparar</td>
-                    <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
+                            onclick="addIncident()"></td>
                 </tr>
                 <tr>
-                    <td>Cuarta</td>
+                    <td onclick="showIncidentHistory()"><button id="myBtn"
+                            style="width: 100px; height: 30px;">Cuarta</button></td>
                     <td>Proyecto</td>
                     <td>07/07/2020</td>
                     <td>Reparar</td>
-                    <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
+                            onclick="addIncident()"></td>
                 </tr>
                 <tr>
-                    <td>Quinta</td>
+                    <td onclick="showIncidentHistory()"><button id="myBtn"
+                            style="width: 100px; height: 30px;">Quinta</button></td>
                     <td>Proyecto</td>
                     <td>07/07/2020</td>
                     <td>Reparar</td>
-                    <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
+                            onclick="addIncident()"></td>
                 </tr>
                 <tr>
-                    <td>Sexta</td>
+                    <td onclick="showIncidentHistory()"><button id="myBtn"
+                            style="width: 100px; height: 30px;">Sexta</button></td>
                     <td>Proyecto</td>
                     <td>07/07/2020</td>
                     <td>Reparar</td>
-                    <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
+                            onclick="addIncident()"></td>
                 </tr>
                 <tr>
-                    <td>Séptima</td>
+                    <td onclick="showIncidentHistory()"><button id="myBtn"
+                            style="width: 100px; height: 30px;">Séptima</button></td>
                     <td>Proyecto</td>
                     <td>07/07/2020</td>
                     <td>Reparar</td>
-                    <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
+                            onclick="addIncident()"></td>
                 </tr>
             </table>
+            <div id="modal">
+                <div id="modal-content">
+                    <span class="close">&times</span>
+                    <table id="myTable">
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Comentario</th>
+                        </tr>
+                        <tr>
+                            <td>22/07/2020</td>
+                            <td>Arreglada parte de atras</td>
+                        </tr>
+                        <tr>
+                            <td>23/07/2020</td>
+                            <td>Arreglada parte de delante</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
         <div class="row">
             <strong style="width: 100%; margin-bottom: 0px; margin-left: 2%;">Avisos</strong>
