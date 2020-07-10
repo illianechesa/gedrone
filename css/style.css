@@ -76,7 +76,7 @@
   max-height:150px;
 }
 
-#myBtn {
+#myBtn{
   background-color: #ccffff;
   width: 130px;
   height: 70px;
@@ -87,7 +87,7 @@
   font-size: 13px;
 }
 
-#myBtn:hover {
+#myBtn:hover{
   background-color:#ff0000;
   color: white;
 }
