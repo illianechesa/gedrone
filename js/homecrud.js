@@ -49,7 +49,7 @@ function loadModel() {
 }
 
 function loadModelNoMto() {
-    document.getElementById("aeronaves").innerHTML = '<tr><th>Grupo</th> <th>Componente</th> <th>ID</th> </tr> <tr> <th>GF</th> <td><a href="#" >Ala</a></td> <td>1</td> </tr> <tr> <th>M</th> <td><a href="#" >Motor 1</a></td> <td>2</td> </tr> <tr> <th>M</th> <td><a href="#" >Motor 2</a></td> <td>3</td> </tr> <tr> <th>V</th> <td><a href="#" >Hélice</a></td> <td>4</td> </tr> <tr> <th>M</th> <td><a href="#" >Corcho</a></td> <td>5</td> </tr> <tr><td colspan="3"></td></tr>';
+    document.getElementById("aeronaves").innerHTML = '<tr><th>Grupo</th> <th>Componente</th> <th>ID</th> </tr> <tr> <th>GF</th> <td><a href="#" >Ala</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px"width="13px" onclick=""></td> <td>1</td> </tr> <tr> <th>M</th> <td><a href="#" >Motor 1</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px"width="13px" onclick=""></td> <td>2</td> </tr> <tr> <th>M</th> <td><a href="#" >Motor 2</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px"width="13px" onclick=""></td> <td>3</td> </tr> <tr> <th>V</th> <td><a href="#" >Hélice</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px"width="13px" onclick=""></td> <td>4</td> </tr> <tr> <th>M</th> <td><a href="#" >Corcho</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px"width="13px" onclick=""></td> <td>5</td> </tr> <tr><td colspan="3"></td></tr>';
     var x = document.getElementById("aeronaves");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
