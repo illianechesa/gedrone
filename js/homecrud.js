@@ -251,3 +251,15 @@ function migrate() {
     var person = prompt("A que modelo quieres migrar?");
     alert("Migrado correctamente");
 }
+
+function addIncident() {
+    var x = document.getElementById("anadirIncidencia");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}
