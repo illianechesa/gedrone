@@ -95,16 +95,6 @@
                 onclick="deleteFlightFromList()">
         </div>
         <div class="row">
-            <script>
-                var toggler = document.getElementsByClassName("caret");
-                var i;
-                for (i = 0; i < toggler.length; i++) {
-                    toggler[i].addEventListener("click", function () {
-                        this.parentElement.querySelector(".nested").classList.toggle("active");
-                        this.classList.toggle("caret-down");
-                    });
-                }
-            </script>
             <div style="width: 25%;">
                 <nav id="aeronavesp">
                     <ul id="myUL3" style="max-height: 150px; padding-left: 0px;">
@@ -301,6 +291,16 @@
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD93dDOWXwzcY8yJHBUyD_rRIDazxGJl80&callback=myMap"></script>
+    <script>
+        var toggler = document.getElementsByClassName("caret");
+        var i;
+        for (i = 0; i < toggler.length; i++) {
+            toggler[i].addEventListener("click", function () {
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("caret-down");
+            });
+        }
+    </script>
 
 </body>
 
