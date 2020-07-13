@@ -22,7 +22,6 @@
     <!-- Javascript -->
     <script type="text/javascript" src="../js/filter.js"></script>
     <script type="text/javascript" src="../js/homecrud.js"></script>
-
 </head>
 
 <body>
@@ -96,10 +95,30 @@
                 onclick="deleteFlightFromList()">
         </div>
         <div class="row">
+            <script>
+                var toggler = document.getElementsByClassName("caret");
+                var i;
+                for (i = 0; i < toggler.length; i++) {
+                    toggler[i].addEventListener("click", function () {
+                        this.parentElement.querySelector(".nested").classList.toggle("active");
+                        this.classList.toggle("caret-down");
+                    });
+                }
+            </script>
             <div style="width: 25%;">
                 <nav id="aeronavesp">
-                    <ul id="myUL" style="max-height: 150px; padding-left: 0px;">
-                        <li><a href="#" onclick="showOperationList()">Aeronave 1</a></li>
+                    <ul id="myUL3" style="max-height: 150px; padding-left: 0px;">
+                        <li>
+                            <span class="caret">Aeronave 1</span>
+                            <ul class="nested">
+                                <li>Operacion 1</li>
+                                <li><span class="caret">Operacion 2</span>
+                                    <ul class="nested">
+                                        <li>Vuelo 1</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
                         <li><a href="#" onclick="showOperationList()">Aeronave 2</a></li>
                         <li><a href="#" onclick="showOperationList()">Aeronave 3</a></li>
                         <li><a href="#" onclick="showOperationList()">Aeronave 4</a></li>
