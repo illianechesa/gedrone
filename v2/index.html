@@ -135,6 +135,7 @@
                 <th style="width: 21%;">Incidencia</th>
                 <th>Tipo</th>
                 <th>Fecha</th>
+                <th>Descripción</th>
                 <th>Estado</th>
                 <th></th>
             </tr>
@@ -146,70 +147,86 @@
                     <td><input type="text"></td>
                     <td><input type="date"></td>
                     <td><input type="text"></td>
+                    <td><input type="text"></td>
                     <td><button onclick="addIncident()">Guardar</button></td>
+                </tr>
+                <tr id="editarIncidencia" style="visibility: hidden; display: none;">
+                    <td><input type="text" value="Proyecto 1"></td>
+                    <td><input type="text" value="Vuelo"></td>
+                    <td><input type="date"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><button onclick="editIncident()">Guardar</button></td>
                 </tr>
                 <tr>
                     <td onclick="showIncidentHistory()" style="width: 20%;"><button id="myBtn"
                             style="width: 100px; height: 30px;">Primera</button></td>
                     <td>Proyecto</td>
                     <td>07/07/2020</td>
+                    <td>Se ha roto el ala de la aeronave 45</td>
                     <td>Reparar</td>
                     <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
-                            onclick="addIncident()"></td>
+                            onclick="editIncident()"></td>
                 </tr>
                 <tr>
                     <td onclick="showIncidentHistory()" style="width: 20%;"><button id="myBtn"
                             style="width: 100px; height: 30px;">Segunda</button></td>
                     <td>Operacion</td>
                     <td>07/07/2020</td>
+                    <td>Ha dejado de funcionar el motor</td>
                     <td>Reparar</td>
                     <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
-                            onclick="addIncident()"></td>
+                            onclick="editIncident()"></td>
                 </tr>
                 <tr>
                     <td onclick="showIncidentHistory()" style="width: 20%;"><button id="myBtn"
                             style="width: 100px; height: 30px;">Tercera</button></td>
                     <td>Vuelo</td>
                     <td>07/07/2020</td>
+                    <td>No funciona propulsor</td>
                     <td>Reparar</td>
                     <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
-                            onclick="addIncident()"></td>
+                            onclick="editIncident()"></td>
                 </tr>
                 <tr>
                     <td onclick="showIncidentHistory()" style="width: 20%;"><button id="myBtn"
                             style="width: 100px; height: 30px;">Cuarta</button></td>
                     <td>Proyecto</td>
                     <td>07/07/2020</td>
+                    <td>Se ha roto el ala de la aeronave 45</td>
                     <td>Reparar</td>
                     <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
-                            onclick="addIncident()"></td>
+                            onclick="editIncident()"></td>
                 </tr>
                 <tr>
                     <td onclick="showIncidentHistory()" style="width: 20%;"><button id="myBtn"
                             style="width: 100px; height: 30px;">Quinta</button></td>
                     <td>Proyecto</td>
                     <td>07/07/2020</td>
+                    <td>Se ha roto el ala de la aeronave 45</td>
                     <td>Reparar</td>
                     <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
-                            onclick="addIncident()"></td>
+                            onclick="editIncident()"></td>
                 </tr>
                 <tr>
                     <td onclick="showIncidentHistory()" style="width: 20%;"><button id="myBtn"
                             style="width: 100px; height: 30px;">Sexta</button></td>
                     <td>Proyecto</td>
                     <td>07/07/2020</td>
+                    <td>Se ha roto el ala de la aeronave 45</td>
                     <td>Reparar</td>
                     <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
-                            onclick="addIncident()"></td>
+                            onclick="editIncident()"></td>
                 </tr>
                 <tr>
                     <td onclick="showIncidentHistory()" style="width: 20%;"><button id="myBtn"
                             style="width: 100px; height: 30px;">Séptima</button></td>
                     <td>Proyecto</td>
                     <td>07/07/2020</td>
+                    <td>Se ha roto el ala de la aeronave 45</td>
                     <td>Reparar</td>
                     <td><img src="../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
-                            onclick="addIncident()"></td>
+                            onclick="editIncident()"></td>
                 </tr>
             </table>
             <div id="modal">

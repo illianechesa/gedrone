@@ -265,6 +265,18 @@ function addIncident() {
     }
 }
 
+function editIncident() {
+    var x = document.getElementById("editarIncidencia");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}
+
 function showIncidentHistory() {
     var modal = document.getElementById('modal');
     var btn = document.getElementById("myBtn");
