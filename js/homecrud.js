@@ -253,6 +253,16 @@ function migrate() {
     alert("Migrado correctamente");
 }
 
+function deactivateButton() {
+    var txt;
+    var r = confirm("¿Estás seguro que deseas desactivar esta aeronave?");
+    if (r == true) {
+        alert("Se ha desactivado correctamente");
+    } else {
+        txt = "Cancelado";
+    }
+}
+
 function addIncident() {
     var x = document.getElementById("anadirIncidencia");
     if (x.style.visibility === "hidden") {
