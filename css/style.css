@@ -70,8 +70,6 @@
 }
 #tablaproyectos table{
   background-color:lightgray;
-  overflow:auto;
-  max-height:150px;
 }
 
 #myBtn{
