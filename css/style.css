@@ -62,8 +62,6 @@
 }
 #tablamodelos table{
   background-color:lightgray;
-  overflow:auto;
-  max-height:200px;
 }
 
 #tablaproyectos {
