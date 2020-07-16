@@ -73,7 +73,7 @@
                 <tr>
                     <th>Check-In</th>
                     <td><input type="date"></td>
-                    <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" multiple /></td>
+                    <td><button onclick="showCheckIn()">Realizar Check-In</button></td>
                 </tr>
                 <tr>
                     <th>Log Vuelo</th>
@@ -94,6 +94,34 @@
                     <th>Plan de Vuelo</th>
                     <td><input type="date"></td>
                     <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" multiple /></td>
+                </tr>
+            </table>
+            <!-- style="visibility: hidden; display: none;" -->
+            <table id="persona" style="visibility: hidden; display: none;">
+                <tr>
+                    <th>
+                        Acciones
+                    </th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>¿Has hecho x?</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>¿Has hecho y?</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>¿Has hecho z?</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>¿Has hecho t?</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="showCheckIn()">Guardar</button></td>
                 </tr>
             </table>
         </div>
