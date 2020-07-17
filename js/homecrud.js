@@ -156,8 +156,30 @@ function showOperationList() {
 }
 
 function showFlightList() {
-    document.getElementById("vuelosp").innerHTML = '<ul id="myUL" style="max-height: 150px; padding-left: 0px;"> <li><a href="#"  onclick="addFlightToList()">Vuelo 1</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 2</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 3</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 4</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 5</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 6</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 7</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 8</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 9</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="addFlightToList()">Vuelo 10</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> </ul>';
+    document.getElementById("vuelosp").innerHTML = '<ul id="myUL" style="max-height: 150px; padding-left: 0px;"> <li><a href="#"  onclick="showFlightInfo()">Vuelo 1</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 2</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 3</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 4</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 5</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 6</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 7</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 8</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 9</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 10</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> </ul>';
     document.getElementById("vuelosp").style.visibility = "visible"
+}
+
+function showFlightInfo() {
+    var x = document.getElementById("googleMap");
+    var y = document.getElementById("informacionvuelo");
+    var z = document.getElementById("headerdatos");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+        y.style.visibility = "visible";
+        y.style.display = "block";
+        z.style.visibility = "visible";
+        z.style.display = "block";
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+        y.style.visibility = "hidden";
+        y.style.display = "none";
+        z.style.visibility = "visible";
+        z.style.display = "block";
+    }
 }
 
 function openCalendar() {

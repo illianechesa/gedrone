@@ -160,12 +160,12 @@
                 </nav>
             </div>
         </div>
-        <div class="row" style="margin-top: 20px;">
+        <div class="row" id="headerdatos" style="margin-top: 20px; visibility: hidden; display: none;">
             <h6>Mapa</h6>
             <h6 style="margin-left: 49%;">Datos</h6>
         </div>
         <div class="row">
-            <div id="googleMap" style="width:35%;height:250px;"></div>
+            <div id="googleMap" style="visibility: hidden; display: none; width:35%;height:250px;"></div>
             <script>
                 function myMap() {
                     var mapProp = {
@@ -175,7 +175,7 @@
                     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
                 }
             </script>
-            <div id="informacion" style="margin-left: 17%; width: 35%;">
+            <div id="informacionvuelo" style="visibility: hidden; display: none; margin-left: 17%; width: 35%;">
                 <strong>Personas: </strong> <a href="people.html">Illia</a>, <a href="people.html">Jesús</a>
                 <img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px" width="13px"
                     onclick="selectPerson()"><br />
