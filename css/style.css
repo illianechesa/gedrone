@@ -24,12 +24,12 @@
   margin: 0px 30px; /* Add some space below the input */
 }
 
-#aeronaves th, #vuelos th, #persona th, #piloto th, #aeronaves td, #vuelos td, #persona td, #piloto td {
+#aeronaves th, #vuelos th, #persona th, #piloto th, #adicional th, #aeronaves td, #vuelos td, #persona td, #piloto td, #adicional td {
   text-align: left; /* Left-align text */
   padding: 8px; /* Add padding */
 }
 
-#aeronaves tr, #vuelos tr, #persona tr, #piloto tr {
+#aeronaves tr, #vuelos tr, #persona tr, #piloto tr, #adicional tr {
   /* Add a bottom border to all table rows */
   border-bottom: 1px solid #ddd;
 }
