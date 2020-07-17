@@ -177,8 +177,8 @@ function showFlightInfo() {
         x.style.display = "none";
         y.style.visibility = "hidden";
         y.style.display = "none";
-        z.style.visibility = "visible";
-        z.style.display = "block";
+        z.style.visibility = "hidden";
+        z.style.display = "none";
     }
 }
 
