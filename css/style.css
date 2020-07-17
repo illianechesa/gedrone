@@ -16,9 +16,9 @@
     margin: 12px 30px; /* Add some space below the input */
 }
   
-#aeronaves, #vuelos, #informacion, #persona, #piloto {
+#aeronaves, #vuelos, #informacion, #persona, #piloto, #adicional {
   border-collapse: collapse; /* Collapse borders */
-  width: 45%; /* Full-width */
+  width: 55%; /* Full-width */
   border: 1px solid #ddd; /* Add a grey border */
   font-size: 13px; /* Increase font-size */
   margin: 0px 30px; /* Add some space below the input */
