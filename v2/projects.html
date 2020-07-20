@@ -78,16 +78,16 @@
             <img src="../img/ux_graph.jpg" alt="" style="margin-left: 10%; width: 25%; height: 10%;">
         </div>
         <div class="row" style="margin-top: 20px;">
-            <h6>Aeronaves</h6>
-            <img src="../img/add_icon.png" style="margin-left: 20px;" alt="editar" height="23px" width="23px"
-                onclick="addDronToList()">
-            <img src="../img/delete_icon.png" style="margin-left: 20px;" alt="editar" height="21px" width="21px"
-                onclick="deleteDronFromList()">
-            <h6 style="margin-left: 23%;">Operaciones</h6>
+            <h6>Operaciones</h6>
             <img src="../img/add_icon.png" style="margin-left: 20px;" alt="editar" height="23px" width="23px"
                 onclick="addOperationToList()">
             <img src="../img/delete_icon.png" style="margin-left: 20px;" alt="editar" height="21px" width="21px"
                 onclick="deleteOperationFromList()">
+            <h6 style="margin-left: 23%;">Aeronaves</h6>
+            <img src="../img/add_icon.png" style="margin-left: 20px;" alt="editar" height="23px" width="23px"
+                onclick="addDronToList()">
+            <img src="../img/delete_icon.png" style="margin-left: 20px;" alt="editar" height="21px" width="21px"
+                onclick="deleteDronFromList()">
             <h6 style="margin-left: 23%;">Vuelos</h6>
             <img src="../img/add_icon.png" style="margin-left: 20px;" alt="editar" height="23px" width="23px"
                 onclick="addFlightToList()">
@@ -99,13 +99,13 @@
                 <nav id="aeronavesp">
                     <ul id="myUL3" style="max-height: 150px; padding-left: 0px;">
                         <li>
-                            <span class="caret">Aeronave 1</span>
+                            <span class="caret">Operacion 1</span>
                             <ul class="nested">
-                                <li>Operacion 1</li>
-                                <li>Operacion 2</li>
-                                <li>Operacion 3</li>
-                                <li>Operacion 4</li>
-                                <li><span class="caret">Operacion 5</span>
+                                <li>Aeronave 1</li>
+                                <li>Aeronave 2</li>
+                                <li>Aeronave 3</li>
+                                <li>Aeronave 4</li>
+                                <li><span class="caret">Aeronave 5</span>
                                     <ul class="nested">
                                         <li><a href="#" onclick="addFlightToList()">Vuelo 1</a></li>
                                         <li><a href="#" onclick="addFlightToList()">Vuelo 2</a></li>
@@ -115,31 +115,31 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="#" onclick="showOperationList()">Aeronave 2</a></li>
-                        <li><a href="#" onclick="showOperationList()">Aeronave 3</a></li>
-                        <li><a href="#" onclick="showOperationList()">Aeronave 4</a></li>
-                        <li><a href="#" onclick="showOperationList()">Aeronave 5</a></li>
-                        <li><a href="#" onclick="showOperationList()">Aeronave 6</a></li>
-                        <li><a href="#" onclick="showOperationList()">Aeronave 7</a></li>
-                        <li><a href="#" onclick="showOperationList()">Aeronave 8</a></li>
-                        <li><a href="#" onclick="showOperationList()">Aeronave 9</a></li>
-                        <li><a href="#" onclick="showOperationList()">Aeronave 10</a></li>
+                        <li><a href="#" onclick="showAeronaveList()">Operacion 2</a></li>
+                        <li><a href="#" onclick="showAeronaveList()">Operacion 3</a></li>
+                        <li><a href="#" onclick="showAeronaveList()">Operacion 4</a></li>
+                        <li><a href="#" onclick="showAeronaveList()">Operacion 5</a></li>
+                        <li><a href="#" onclick="showAeronaveList()">Operacion 6</a></li>
+                        <li><a href="#" onclick="showAeronaveList()">Operacion 7</a></li>
+                        <li><a href="#" onclick="showAeronaveList()">Operacion 8</a></li>
+                        <li><a href="#" onclick="showAeronaveList()">Operacion 9</a></li>
+                        <li><a href="#" onclick="showAeronaveList()">Operacion 10</a></li>
                     </ul>
                 </nav>
             </div>
             <div style="width: 25%; margin-left: 10%;">
                 <nav id="operacionesp">
                     <!-- <ul id="myUL" style="max-height: 150px; padding-left: 0px;">
-                        <li><a href="#" onclick="showFlightList()">Operación 1</a></li>
-                        <li><a href="#" onclick="showFlightList()">Operación 2</a></li>
-                        <li><a href="#" onclick="showFlightList()">Operación 3</a></li>
-                        <li><a href="#" onclick="showFlightList()">Operación 4</a></li>
-                        <li><a href="#" onclick="showFlightList()">Operación 5</a></li>
-                        <li><a href="#" onclick="showFlightList()">Operación 6</a></li>
-                        <li><a href="#" onclick="showFlightList()">Operación 7</a></li>
-                        <li><a href="#" onclick="showFlightList()">Operación 8</a></li>
-                        <li><a href="#" onclick="showFlightList()">Operación 9</a></li>
-                        <li><a href="#" onclick="showFlightList()">Operación 10</a></li>
+                        <li><a href="#" onclick="showFlightList()">Aeronave 1</a></li>
+                        <li><a href="#" onclick="showFlightList()">Aeronave 2</a></li>
+                        <li><a href="#" onclick="showFlightList()">Aeronave 3</a></li>
+                        <li><a href="#" onclick="showFlightList()">Aeronave 4</a></li>
+                        <li><a href="#" onclick="showFlightList()">Aeronave 5</a></li>
+                        <li><a href="#" onclick="showFlightList()">Aeronave 6</a></li>
+                        <li><a href="#" onclick="showFlightList()">Aeronave 7</a></li>
+                        <li><a href="#" onclick="showFlightList()">Aeronave 8</a></li>
+                        <li><a href="#" onclick="showFlightList()">Aeronave 9</a></li>
+                        <li><a href="#" onclick="showFlightList()">Aeronave 10</a></li>
                     </ul> -->
                 </nav>
             </div>
