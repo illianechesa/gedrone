@@ -48,6 +48,18 @@ function loadModel() {
     }
 }
 
+function loadCargaConf() {
+    var x = document.getElementById("aeronaves");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}
+
 function loadModelNoMto() {
     document.getElementById("aeronaves").innerHTML = '<tr> <th>Grupo</th> <th>Componente</th> <th>ID</th> </tr> <tr> <th>GF</th> <td><a href="#">Refuerzo_FC</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-01</td> </tr> <tr> <th>M</th> <td><a href="#">Frontal_flap</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-02</td> </tr> <tr> <th>M</th> <td><a href="#">Tubo_FC</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-03</td> </tr> <tr> <th>V</th> <td><a href="#">Wing_fence</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-04</td> </tr> <tr> <th>M</th> <td><a href="#">Brazo_flap</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-05</td> </tr> <tr> <th>M</th> <td><a href="#">Antena_DMD</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>Paux</td> </tr> <tr> <td colspan="3"></td> </tr>';
     var x = document.getElementById("aeronaves");
@@ -135,6 +147,18 @@ function addProject() {
 
 function showAddDrone() {
     document.getElementById("adicional").innerHTML = '<tr> <th>Modelo: </th> <td> <select name="modelo" id=""> <option>M1</option> <option>M2</option> <option>M3</option> <option>M4</option> <option>M5</option> </select> </td> </tr> <tr> <th>NºSerie: </th> <th><input type="text" name="modelo"></th> </tr> <tr> <th>PIN: </th> <th><input type="text" name="modelo"></th> </tr> <tr> <th>CE: </th> <th><input type="text" name="modelo"></th> </tr> <tr> <th>Matricula: </th> <th><input type="text" name="modelo"></th> </tr> <tr> <th>Estado: </th> <th> <select> <option name="operativo" value="operativo">Operativa</option> <option name="baja" value="baja">Baja</option> </select> </th> </tr> <tr> <th> <input type="submit" value="Guardar"> </th> <th> <input type="reset" value="Restaurar campos"> </th>';
+    var x = document.getElementById("adicional");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}
+
+function showAddCarga() {
     var x = document.getElementById("adicional");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
