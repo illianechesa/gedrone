@@ -182,6 +182,18 @@ function showAddComm() {
     }
 }
 
+function showAddSist() {
+    var x = document.getElementById("adicional");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}
+
 function addFlightToList() {
     window.open("addflight.html", "_self");
 }

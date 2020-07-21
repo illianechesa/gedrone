@@ -63,6 +63,253 @@
     <!-- Page Content -->
     <div class="main">
         <div class="row">
+            <strong style="width: 100%; margin-bottom: 20px;">
+                <a href="../models.html">Modelos</a>
+                <a style="margin-left: 100px;" href="cargadepago.html">Carga de pago</a>
+                <a style="margin-left: 100px;" href="comunicaciones.html">Comunicaciones</a>
+                <a href="#" onclick="showhideDrones()" style="color: black; margin-left: 100px;">Sistemas
+                    auxiliares</a><img src="../../img/add_icon.png" style="margin-left: 20px;" alt="editar"
+                    height="23px" width="23px" onclick="showAddSist()">
+            </strong>
+            <table id="vuelos" style="margin-left: 0px; margin-right: 80%; width: 10%;">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Configuracion</th>
+                    <th>Editar</th>
+                    <th>Desactivar</th>
+                </tr>
+            </table>
+            <div id="tablamodelos">
+                <table id="vuelos" style="margin-left: 0px;">
+                    <tr>
+                        <th style="width: 35%;"><a href="#" onclick="loadCargaConf()"
+                                style="color: black;">Paracaidas</a>
+                        </th>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">C1</a></th>
+                        <th><img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
+                                onclick="loadCargaConf()"></th>
+                        <th><img src="../../img/deactivate_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px" onclick="deactivateButton()">
+                    </tr>
+                    <tr>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Paracaidas</a></th>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">C2</a></th>
+                        <th><img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
+                                onclick="loadCargaConf()"></th>
+                        <th><img src="../../img/deactivate_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px" onclick="deactivateButton()">
+                    </tr>
+                    <tr>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Paracaidas</a></th>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">C3</a></th>
+                        <th><img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
+                                onclick="loadCargaConf()"></th>
+                        <th><img src="../../img/deactivate_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px" onclick="deactivateButton()">
+                    </tr>
+                    <tr>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Paracaidas</a></th>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">C4</a></th>
+                        <th><img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
+                                onclick="loadCargaConf()"></th>
+                        <th><img src="../../img/deactivate_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px" onclick="deactivateButton()">
+                    </tr>
+                    <tr>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Paracaidas</a></th>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">C5</a></th>
+                        <th><img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
+                                onclick="loadCargaConf()"></th>
+                        <th><img src="../../img/deactivate_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px" onclick="deactivateButton()">
+                    </tr>
+                    <tr>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Paracaidas</a></th>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">C6</a></th>
+                        <th><img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
+                                onclick="loadCargaConf()"></th>
+                        <th><img src="../../img/deactivate_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px" onclick="deactivateButton()">
+                    </tr>
+                    <tr>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Paracaidas</a></th>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">C7</a></th>
+                        <th><img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
+                                onclick="loadCargaConf()"></th>
+                        <th><img src="../../img/deactivate_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px" onclick="deactivateButton()">
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <form action="comunicaciones.html" id="" method="post">
+                <table id="adicional" style="margin-top: 0px; margin-left: 0px; visibility: hidden; display: none;">
+                    <tr>
+                        <th>Tipo: </th>
+                        <td>
+                            <select name="modelo" id="">
+                                <option>Paracaídas</option>
+                                <option>Otro</option>
+                                <option>Otro</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Configuracion: </th>
+                        <th><input type="text" name="modelo"></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input type="submit" value="Guardar">
+                        </th>
+                        <th>
+                            <input type="reset" value="Restaurar campos">
+                        </th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="row">
+            <div id="tablamodelos">
+                <table id="aeronaves"
+                    style="margin-left: 0px; margin-top: 10px; width: 100%; visibility: hidden; display: none;">
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Configuracion</th>
+                    </tr>
+                    <tr>
+                        <td>Paracaídas<img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar"
+                                height="13px" onclick=""></td>
+                        <td>C1</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="row">
+            <strong style="width: 100%; margin-bottom: 0px; margin-left: 0%; margin-top: 0px;">Incidencias<img
+                    src="../../img/add_icon.png" style="margin-left: 20px;" alt="editar" height="23px" width="23px"
+                    onclick="addIncident()"></strong>
+        </div>
+        <table style="width: 70%; margin-left: 30px;" id="vuelos">
+            <tr>
+                <th style="width: 21%;">Incidencia</th>
+                <th>Tipo</th>
+                <th>Fecha</th>
+                <th>Descripción</th>
+                <th>Estado</th>
+                <th></th>
+            </tr>
+        </table>
+        <div id="tablaproyectos">
+            <table style="width: 70%; margin-left: 30px;" id="vuelos">
+                <tr id="anadirIncidencia" style="visibility: hidden; display: none;">
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="date"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><button onclick="addIncident()">Guardar</button></td>
+                </tr>
+                <tr id="editarIncidencia" style="visibility: hidden; display: none;">
+                    <td><input type="text" value="Proyecto 1"></td>
+                    <td><input type="text" value="Vuelo"></td>
+                    <td><input type="date"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><button onclick="editIncident()">Guardar</button></td>
+                </tr>
+                <tr>
+                    <td onclick="showIncidentHistory()" style="width: 20%;"><button id="myBtn"
+                            style="width: 100px; height: 30px;">Primera</button></td>
+                    <td>Carga de pago</td>
+                    <td>07/07/2020</td>
+                    <td>Se ha roto el ala de la aeronave 45</td>
+                    <td>Reparar</td>
+                    <td><img src="../../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
+                            onclick="editIncident()"></td>
+                </tr>
+                <tr>
+                    <td onclick="showIncidentHistory()" style="width: 20%;"><button id="myBtn"
+                            style="width: 100px; height: 30px;">Segunda</button></td>
+                    <td>Carga de pago</td>
+                    <td>07/07/2020</td>
+                    <td>Ha dejado de funcionar el motor</td>
+                    <td>Reparar</td>
+                    <td><img src="../../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
+                            onclick="editIncident()"></td>
+                </tr>
+                <tr>
+                    <td onclick="showIncidentHistory()" style="width: 20%;"><button id="myBtn"
+                            style="width: 100px; height: 30px;">Tercera</button></td>
+                    <td>Carga de pago</td>
+                    <td>07/07/2020</td>
+                    <td>No funciona propulsor</td>
+                    <td>Reparar</td>
+                    <td><img src="../../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
+                            onclick="editIncident()"></td>
+                </tr>
+                <tr>
+                    <td onclick="showIncidentHistory()" style="width: 20%;"><button id="myBtn"
+                            style="width: 100px; height: 30px;">Cuarta</button></td>
+                    <td>Carga de pago</td>
+                    <td>07/07/2020</td>
+                    <td>Se ha roto el ala de la aeronave 45</td>
+                    <td>Reparar</td>
+                    <td><img src="../../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
+                            onclick="editIncident()"></td>
+                </tr>
+                <tr>
+                    <td onclick="showIncidentHistory()" style="width: 20%;"><button id="myBtn"
+                            style="width: 100px; height: 30px;">Quinta</button></td>
+                    <td>Carga de pago</td>
+                    <td>07/07/2020</td>
+                    <td>Se ha roto el ala de la aeronave 45</td>
+                    <td>Reparar</td>
+                    <td><img src="../../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
+                            onclick="editIncident()"></td>
+                </tr>
+                <tr>
+                    <td onclick="showIncidentHistory()" style="width: 20%;"><button id="myBtn"
+                            style="width: 100px; height: 30px;">Sexta</button></td>
+                    <td>Carga de pago</td>
+                    <td>07/07/2020</td>
+                    <td>Se ha roto el ala de la aeronave 45</td>
+                    <td>Reparar</td>
+                    <td><img src="../../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
+                            onclick="editIncident()"></td>
+                </tr>
+                <tr>
+                    <td onclick="showIncidentHistory()" style="width: 20%;"><button id="myBtn"
+                            style="width: 100px; height: 30px;">Séptima</button></td>
+                    <td>Carga de pago</td>
+                    <td>07/07/2020</td>
+                    <td>Se ha roto el ala de la aeronave 45</td>
+                    <td>Reparar</td>
+                    <td><img src="../../img/edit_icon.png" alt="" style="width: 20px; height: 20px;"
+                            onclick="editIncident()"></td>
+                </tr>
+            </table>
+            <div id="modal">
+                <div id="modal-content">
+                    <span class="close">&times</span>
+                    <table id="myTable">
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Comentario</th>
+                        </tr>
+                        <tr>
+                            <td>22/07/2020</td>
+                            <td>Arreglada parte de atras</td>
+                        </tr>
+                        <tr>
+                            <td>23/07/2020</td>
+                            <td>Arreglada parte de delante</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 
