@@ -356,7 +356,6 @@ function showhideDrones() {
 
 function addNewModel() {
     var x = document.getElementById("newmodel");
-    x.innerHTML = '<h6 style="width: 40%; margin-top: 30px; margin-left: 150px; margin-right: 0px;">Para añadir un nuevo modelo, adjunte un excel</h6> <input style="width: 80%; margin-left: 0px; margin-top: 30px;" type="file" name="adjunto" accept=".xlsx,.xlsm" /> <button style="margin-top: 30px; margin-left: 0px; width: 80px; height: 30px;" onclick="loadModel()" style="color: black;">Cargar</button>';
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
         x.style.display = "block"
