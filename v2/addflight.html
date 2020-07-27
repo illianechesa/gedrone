@@ -183,8 +183,8 @@
             <div style="margin-left: 2%; width: 20%;">
                 <p><textarea name="incidencias" cols="20" rows="3" placeholder="Incidencias..."></textarea></p>
             </div>
-            <table id="aeronaves">
-                <!--                 <tr>
+            <table id="aeronaves" style="visibility: hidden; display: none;">
+                <tr>
                     <th>
                         Acciones
                     </th>
@@ -208,12 +208,12 @@
                 </tr>
                 <tr>
                     <td colspan="2"><button onclick="history.back()">Guardar</button></td>
-                </tr> -->
+                </tr>
             </table>
         </div>
         <div class="row">
             <button style="width: 10%; margin-bottom: 20px; margin-left: 2%;"
-                onclick="checkChecklist()">Registrar</button>
+                onclick="history.back()">Registrar</button>
         </div>
     </div>
 

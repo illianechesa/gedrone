@@ -235,8 +235,15 @@ function openCalendar() {
 }
 
 function checkChecklist() {
-    document.getElementById("aeronaves").innerHTML = '<tr> <th> Acciones </th> <th></th> </tr> <tr> <td>¿Has hecho x?</td> <td><input type="checkbox"></td> </tr> <tr> <td>¿Has hecho y?</td> <td><input type="checkbox"></td> </tr> <tr> <td>¿Has hecho z?</td> <td><input type="checkbox"></td> </tr> <tr> <td>¿Has hecho t?</td> <td><input type="checkbox"></td> </tr> <tr> <td colspan="2"><button onclick="history.back()">Guardar</button></td> </tr>';
-    document.getElementById("aeronaves").style.visibility = "visible"
+    var x = document.getElementById("aeronaves");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
 }
 
 function showPiloto() {
