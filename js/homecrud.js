@@ -127,16 +127,6 @@ function hideHistory() {
     document.getElementById("piloto").style.visibility = "hidden";
 }
 
-function listFlights() {
-    document.getElementById("aeronaves").innerHTML = '<tr> <th>Vuelo</th> <th>Aeronave</th> <th>Piloto</th> <th>Fecha</th> <th>Realizado</th> <th></th> </tr> <tr> <td>Vuelo 1</td> <td>M5-123</td> <td>Illia</td> <td>22/08/2021</td> <td><img src="img/check_icon.png" alt="info" height="15px" width="15px"></td> <td></td> </tr> <tr> <td>Vuelo 2</td> <td>M1-1</td> <td>Jesús</td> <td>22/08/2021</td> <td><img src="img/check_icon.png" alt="info" height="15px" width="15px"></td> <td></td> </tr> <tr> <td>Vuelo 3</td> <td>M1-991</td> <td>Pedro</td> <td>22/08/2021</td> <td></td> <td></td> </tr> <tr> <td><input type="text"></td> <td> <select name="modelo" id=""> <option>M1</option> <option>M2</option> <option>M3</option> <option>M4</option> <option>M5</option> </select> </td> <td><input type="text"></td> <td><input type="date"></td> <td><input type="checkbox"></td> <td><button onclick="anadirVuelo()">Añadir Vuelo</button></td> </tr> <tr> <td> <button onclick="hideFlights()">Ocultar vuelos</button> </td> </tr>';
-    document.getElementById("aeronaves").style.visibility = "visible"
-}
-
-function hideFlights() {
-    document.getElementById("aeronaves").innerHTML = "";
-    document.getElementById("aeronaves").style.visibility = "hidden"
-}
-
 function addProject() {
     window.open("addproject.html", "_self");
 }
@@ -194,13 +184,27 @@ function addFlightToList() {
 }
 
 function showAeronaveList() {
-    document.getElementById("operacionesp").innerHTML = '<ul id="myUL" style="max-height: 150px; padding-left: 0px;"> <li><a href="#" onclick="showFlightList()">Aeronave 1</a></li> <li><a href="#" onclick="showFlightList()">Aeronave 2</a></li> <li><a href="#" onclick="showFlightList()">Aeronave 3</a></li> <li><a href="#" onclick="showFlightList()">Aeronave 4</a></li> <li><a href="#" onclick="showFlightList()">Aeronave 5</a></li> <li><a href="#" onclick="showFlightList()">Aeronave 6</a></li> <li><a href="#" onclick="showFlightList()">Aeronave 7</a></li> <li><a href="#" onclick="showFlightList()">Aeronave 8</a></li> <li><a href="#" onclick="showFlightList()">Aeronave 9</a></li> <li><a href="#" onclick="showFlightList()">Aeronave 10</a></li> </ul>';
-    document.getElementById("operacionesp").style.visibility = "visible"
+    var x = document.getElementById("operacionesp");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
 }
 
 function showFlightList() {
-    document.getElementById("vuelosp").innerHTML = '<ul id="myUL" style="max-height: 150px; padding-left: 0px;"> <li><a href="#"  onclick="showFlightInfo()">Vuelo 1</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 2</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 3</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 4</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 5</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 6</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 7</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 8</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 9</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> <li><a href="#"  onclick="showFlightInfo()">Vuelo 10</a><img src="../img/edit_icon.png" alt="" style="width: 15px; height: 15px; margin-left:20px" onclick="addFlightToList()"></img></li> </ul>';
-    document.getElementById("vuelosp").style.visibility = "visible"
+    var x = document.getElementById("vuelosp");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
 }
 
 function showFlightInfo() {
