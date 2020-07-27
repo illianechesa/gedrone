@@ -36,7 +36,6 @@ function addDrone() {
 }
 
 function loadModel() {
-    document.getElementById("aeronaves").innerHTML = '<tr> <th>Grupo</th> <th>Componente</th> <th>ID</th> </tr> <tr> <th>GF</th> <td><a href="#" onclick="loadMto()">Refuerzo_FC</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-01</td> </tr> <tr> <th>M</th> <td><a href="#" onclick="loadMto()">Frontal_flap</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-02</td> </tr> <tr> <th>M</th> <td><a href="#" onclick="loadMto()">Tubo_FC</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-03</td> </tr> <tr> <th>V</th> <td><a href="#" onclick="loadMto()">Wing_fence</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-04</td> </tr> <tr> <th>M</th> <td><a href="#" onclick="loadMto()">Brazo_flap</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-05</td> </tr> <tr> <th>M</th> <td><a href="#" onclick="loadMto()">Antena_DMD</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>Paux</td> </tr> <tr> <td colspan="3"></td> </tr>';
     var x = document.getElementById("aeronaves");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
@@ -61,7 +60,6 @@ function loadCargaConf() {
 }
 
 function loadModelNoMto() {
-    document.getElementById("aeronaves").innerHTML = '<tr> <th>Grupo</th> <th>Componente</th> <th>ID</th> </tr> <tr> <th>GF</th> <td><a href="#">Refuerzo_FC</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-01</td> </tr> <tr> <th>M</th> <td><a href="#">Frontal_flap</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-02</td> </tr> <tr> <th>M</th> <td><a href="#">Tubo_FC</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-03</td> </tr> <tr> <th>V</th> <td><a href="#">Wing_fence</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-04</td> </tr> <tr> <th>M</th> <td><a href="#">Brazo_flap</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>P-A-05</td> </tr> <tr> <th>M</th> <td><a href="#">Antena_DMD</a><img src="../img/edit_icon.png" style="margin-left: 5px;" alt="editar" height="13px" width="13px" onclick=""></td> <td>Paux</td> </tr> <tr> <td colspan="3"></td> </tr>';
     var x = document.getElementById("aeronaves");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
@@ -91,7 +89,6 @@ function showCheckIn() {
 }
 
 function loadMto() {
-    document.getElementById("persona").innerHTML = '<tr> <th>Numero de serie</th> <th>Horas vuelo</th> <th>Fecha revisión</th> <th>Mantenimiento</th> </tr> <tr> <th>233423</th> <td>1 horas</td> <td><input type="date"></td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> <img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="15px" width="15px" onclick="openCalendar()"> </td> </tr> <tr> <th>6757</th> <td>4 horas</td> <td><input type="date"></td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> <img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="15px" width="15px" onclick="openCalendar()"></td> </tr> <tr> <th>65757</th> <td>15 horas</td> <td><input type="date"></td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> <img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="15px" width="15px" onclick="openCalendar()"> </td> </tr> <tr> <th>56757</th> <td>1 horas</td> <td><input type="date"></td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"> <img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="15px" width="15px" onclick="openCalendar()"></td> </tr> <tr> <th>56757</th> <td>6 horas</td> <td><input type="date"></td> <td><img src="../img/mantenimiento_icon.png" alt="mantenimiento" height="15px" width="15px" onclick="loadHistory()"><img src="../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="15px" width="15px" onclick="openCalendar()"> </td> </tr> <tr> <th><button onclick="hidemto()">Ocultar</button></th> </tr>';
     var x = document.getElementById("persona");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
@@ -114,7 +111,6 @@ function registrarvuelo() {
 }
 
 function loadHistory() {
-    document.getElementById("piloto").innerHTML = '<tr> <th>Fecha</th><th>Tipo</th> <th>Comentario</th> <td></td> </tr> <tr> <td>22/07/20</td><td>Revision</td> <td>Se ha arreglado el ala</td> <td></td> </tr> <tr> <td>24/07/20</td> <td>Sustitucion</td><td>Se ha revisado este componente</td> <td></td> </tr> <tr> <td><input type="date"></td><td><select><option>Revision</option><option>Sustitucion</option><option>Modificacion</option><option>Instalacion</option></select></td> <td><input type="text"></td> <td><button onclick="">Guardar</button></td> </tr> <tr> <td colspan="3"><button onclick="hideHistory()">Ocultar</button></td> </tr>';
     var x = document.getElementById("piloto");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
