@@ -87,8 +87,9 @@
                     style="width: 20%; height: 20%; margin-left: 20%; margin-top: 0%;">
             </div>
             <h5 style="width: 100%;">Aptitud de vuelo</h5>
-            <h6 style="width: 100%;">Aeronaves<img src="../img/add_icon.png" style="margin-left: 10px;" alt="editar"
-                    height="18px" width="18px" onclick="addAeronaveStats()"></h6>
+            <h6 style="width: 100%; margin-top: 20px;">Aeronaves<img src="../img/add_icon.png"
+                    style="margin-left: 10px;" alt="editar" height="18px" width="18px" onclick="addAeronaveStats()">
+            </h6>
             <div class="row">
                 <table id="piloto">
                     <tr>
@@ -126,6 +127,48 @@
                         <td colspan="2"></td>
                         <td></td>
                         <td><button onclick="addAeronaveStats()">Guardar</button></td>
+                    </tr>
+                </table>
+            </div>
+            <h6 style="width: 100%;">Operaciones<img src="../img/add_icon.png" style="margin-left: 10px;" alt="editar"
+                    height="18px" width="18px" onclick="addOperacionesStats()"></h6>
+            <div class="row">
+                <table id="piloto">
+                    <tr>
+                        <th>Tipo operación</th>
+                        <th>Descripción</th>
+                        <th>Apto</th>
+                        <th>Entrenamiento anual</th>
+                    </tr>
+                    <tr>
+                        <td>BVLOS</td>
+                        <td>Volar sobre objetos</td>
+                        <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    </tr>
+                    <tr>
+                        <td>BRLOS</td>
+                        <td>Obtener volumen 3D</td>
+                        <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    </tr>
+                    <tr>
+                        <td>VLOS</td>
+                        <td>Fotografía animal</td>
+                        <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    </tr>
+                    <tr id="anadiroperacion" style="visibility: hidden; display: none;">
+                        <td>
+                            <select name="" id="">
+                                <option value="">BVLOS</option>
+                                <option value="">BRLOS</option>
+                                <option value="">VLOS</option>
+                            </select>
+                        </td>
+                        <td>Descripción: <input type="text"></td>
+                        <td></td>
+                        <td><button onclick="addOperacionesStats()">Guardar</button></td>
                     </tr>
                 </table>
             </div>

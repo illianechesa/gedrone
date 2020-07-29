@@ -460,3 +460,15 @@ function addAeronaveStats() {
         x.style.display = "none";
     }
 }
+
+function addOperacionesStats() {
+    var x = document.getElementById("anadiroperacion");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}
