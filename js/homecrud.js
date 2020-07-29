@@ -472,3 +472,27 @@ function addOperacionesStats() {
         x.style.display = "none";
     }
 }
+
+function addRequisitosStats() {
+    var x = document.getElementById("anadirrequisito");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}
+
+function addAdicionalStats() {
+    var x = document.getElementById("anadiradicional");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}

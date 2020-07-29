@@ -172,43 +172,63 @@
                     </tr>
                 </table>
             </div>
-            <h5>Requisitos pilotaje</h5>
+            <h5 style="width: 100%;">Documentación</h5>
+            <h6 style="width: 100%; margin-top: 20px;">Requisitos pilotaje<img src="../img/add_icon.png"
+                    style="margin-left: 10px;" alt="editar" height="18px" width="18px" onclick="addRequisitosStats()">
+            </h6>
             <div class="row">
                 <table id="piloto">
                     <tr>
                         <th>Certificado piloto (Teórico): </th>
-                        <td><input style="width: 50%;" type="file" name="adjunto" accept=".*" multiple /><strong
-                                style="margin-left: 10%;">22/07/2020</strong></td>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
                     </tr>
                     <tr>
                         <th>Certificado piloto (Práctico): </th>
-                        <td><input style="width: 50%;" type="file" name="adjunto" accept=".*" multiple /><strong
-                                style="margin-left: 10%;">22/07/2020</strong></td>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
                     </tr>
                     <tr>
                         <th>Certificado médico: </th>
-                        <td><input style="width: 50%;" type="file" name="adjunto" accept=".*" multiple /><strong
-                                style="margin-left: 10%;">22/07/2020</strong></td>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
+                    </tr>
+                    <tr id="anadirrequisito" style="visibility: hidden; display: none;">
+                        <td>Descripción : <input type="text"></td>
+                        <td><input type="file" multiple><button onclick="addRequisitosStats()"
+                                style="margin-left: 100px;">Guardar</button></td>
                     </tr>
                 </table>
             </div>
-            <h5>Documentación adicional</h5>
+            <h6>Documentación adicional<img src="../img/add_icon.png" style="margin-left: 10px;" alt="editar"
+                    height="18px" width="18px" onclick="addAdicionalStats()"></h6>
             <div class="row">
                 <table id="piloto">
                     <tr>
                         <th>Certificado de equivalencia (Práctico): </th>
-                        <td><input style="width: 50%;" type="file" name="adjunto" accept=".*" multiple /><strong
-                                style="margin-left: 10%;">22/07/2020</strong></td>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
                     </tr>
                     <tr>
                         <th>Título radiofonista: </th>
-                        <td><input style="width: 50%;" type="file" name="adjunto" accept=".*" multiple /><strong
-                                style="margin-left: 10%;">22/07/2020</strong></td>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
                     </tr>
                     <tr>
                         <th>Otros títulos o formaciones: </th>
-                        <td><input style="width: 50%;" type="file" name="adjunto" accept=".*" multiple /><strong
-                                style="margin-left: 10%;">22/07/2020</strong></td>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
+                    </tr>
+                    <tr id="anadiradicional" style="visibility: hidden; display: none;">
+                        <td>Descripción : <input type="text"></td>
+                        <td><input type="file" multiple><button onclick="addAdicionalStats()"
+                                style="margin-left: 100px;">Guardar</button></td>
                     </tr>
                 </table>
             </div>
