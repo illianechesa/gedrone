@@ -186,97 +186,172 @@
             </table>
         </div>
         <div id="menu1" style="visibility: hidden; display: none;">
-            <h5>Persona</h5>
-            <div class="row">
-                <table id="persona">
-                    <tr>
-                        <th>Rol: </th>
-                        <td>Piloto </td>
-                    </tr>
-                    <tr>
-                        <th>Nombre: </th>
-                        <td>Illia</td>
-                    </tr>
-                    <tr>
-                        <th>Aptitud de vuelo: </th>
-                        <td><img src="../img/check_icon.png" style="height: 20px; width: 20px; margin-right: 20px;"
-                                alt="">(4 Vuelos en los últimos 90 días)</td>
-                    </tr>
-                    <tr>
-                        <th>Entrenamiento anual: </th>
-                        <td><img src="../img/check_icon.png" style="height: 20px; width: 20px; margin-right: 20px;"
-                                alt=""></td>
-                    </tr>
-                </table>
-            </div>
             <h5>Piloto</h5>
             <div class="row">
-                <table id="piloto">
+                <table id="persona" style="width: 30%;">
                     <tr>
-                        <th>Carnet: </th>
-                        <td>21312</td>
+                        <th>Nombre: </th>
+                        <td>Illia </td>
                     </tr>
                     <tr>
-                        <th>Certificados: </th>
-                        <td><a href="">EIS-123</a></td>
+                        <th>NºCarnet: </th>
+                        <td>4542</td>
                     </tr>
                     <tr>
-                        <th>Persisos: </th>
-                        <td><a href="">GR11</a></td>
+                        <th>Fecha caducidad carnet: </th>
+                        <td>22/12/2020</td>
                     </tr>
                     <tr>
-                        <th>Formación: </th>
-                        <td>Prácticas</td>
-                    </tr>
-                    <tr>
-                        <th>Aeronaves: </th>
-                        <td>Marvin5, DJI Phantom</td>
-                    </tr>
-                    <tr>
-                        <th>Horas pilotadas: </th>
-                        <td>40 horas</td>
+                        <th>Fecha caducidad seguro: </th>
+                        <td>12/02/2020</td>
                     </tr>
                 </table>
                 <img src="../img/flight_hours.png" alt="graph"
-                    style="width: 30%; height: 30%; margin-left: 30%; margin-top: 2%;">
+                    style="width: 20%; height: 20%; margin-left: 20%; margin-top: 0%;">
             </div>
-            <h5>Requisitos pilotaje</h5>
+            <h5 style="width: 100%;">Aptitud de vuelo</h5>
+            <h6 style="width: 100%; margin-top: 20px;">Aeronaves<img src="../img/add_icon.png"
+                    style="margin-left: 10px;" alt="editar" height="18px" width="18px" onclick="addAeronaveStats()">
+            </h6>
+            <div class="row">
+                <table id="piloto">
+                    <tr>
+                        <th>Tipo aeronave</th>
+                        <th>Horas voladas</th>
+                        <th>Apto</th>
+                        <th>Entrenamiento anual</th>
+                    </tr>
+                    <tr>
+                        <td>Marvin5</td>
+                        <td>22 horas</td>
+                        <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    </tr>
+                    <tr>
+                        <td>DJPhantom</td>
+                        <td>3 horas</td>
+                        <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    </tr>
+                    <tr>
+                        <td>Phantom DJ</td>
+                        <td>12 horas</td>
+                        <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    </tr>
+                    <tr id="anadiraeronave" style="visibility: hidden; display: none;">
+                        <td>
+                            <select name="" id="">
+                                <option value="">Marvin5</option>
+                                <option value="">DJPhantom</option>
+                                <option value="">PhantomDJ</option>
+                            </select>
+                        </td>
+                        <td colspan="2"></td>
+                        <td></td>
+                        <td><button onclick="addAeronaveStats()">Guardar</button></td>
+                    </tr>
+                </table>
+            </div>
+            <h6 style="width: 100%;">Operaciones<img src="../img/add_icon.png" style="margin-left: 10px;" alt="editar"
+                    height="18px" width="18px" onclick="addOperacionesStats()"></h6>
+            <div class="row">
+                <table id="piloto">
+                    <tr>
+                        <th>Tipo operación</th>
+                        <th>Descripción</th>
+                        <th>Apto</th>
+                        <th>Entrenamiento anual</th>
+                    </tr>
+                    <tr>
+                        <td>BVLOS</td>
+                        <td>Volar sobre objetos</td>
+                        <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    </tr>
+                    <tr>
+                        <td>BRLOS</td>
+                        <td>Obtener volumen 3D</td>
+                        <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    </tr>
+                    <tr>
+                        <td>VLOS</td>
+                        <td>Fotografía animal</td>
+                        <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                    </tr>
+                    <tr id="anadiroperacion" style="visibility: hidden; display: none;">
+                        <td>
+                            <select name="" id="">
+                                <option value="">BVLOS</option>
+                                <option value="">BRLOS</option>
+                                <option value="">VLOS</option>
+                            </select>
+                        </td>
+                        <td>Descripción: <input type="text"></td>
+                        <td></td>
+                        <td><button onclick="addOperacionesStats()">Guardar</button></td>
+                    </tr>
+                </table>
+            </div>
+            <h5 style="width: 100%;">Documentación</h5>
+            <h6 style="width: 100%; margin-top: 20px;">Requisitos pilotaje<img src="../img/add_icon.png"
+                    style="margin-left: 10px;" alt="editar" height="18px" width="18px" onclick="addRequisitosStats()">
+            </h6>
             <div class="row">
                 <table id="piloto">
                     <tr>
                         <th>Certificado piloto (Teórico): </th>
-                        <td><input style="width: 50%;" type="file" name="adjunto" accept=".*" multiple /><strong
-                                style="margin-left: 10%;">22/07/2020</strong></td>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
                     </tr>
                     <tr>
                         <th>Certificado piloto (Práctico): </th>
-                        <td><input style="width: 50%;" type="file" name="adjunto" accept=".*" multiple /><strong
-                                style="margin-left: 10%;">22/07/2020</strong></td>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
                     </tr>
                     <tr>
                         <th>Certificado médico: </th>
-                        <td><input style="width: 50%;" type="file" name="adjunto" accept=".*" multiple /><strong
-                                style="margin-left: 10%;">22/07/2020</strong></td>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
+                    </tr>
+                    <tr id="anadirrequisito" style="visibility: hidden; display: none;">
+                        <td>Descripción : <input type="text"></td>
+                        <td><input type="file" multiple><button onclick="addRequisitosStats()"
+                                style="margin-left: 100px;">Guardar</button></td>
                     </tr>
                 </table>
             </div>
-            <h5>Documentación adicional</h5>
+            <h6>Documentación adicional<img src="../img/add_icon.png" style="margin-left: 10px;" alt="editar"
+                    height="18px" width="18px" onclick="addAdicionalStats()"></h6>
             <div class="row">
                 <table id="piloto">
                     <tr>
                         <th>Certificado de equivalencia (Práctico): </th>
-                        <td><input style="width: 50%;" type="file" name="adjunto" accept=".*" multiple /><strong
-                                style="margin-left: 10%;">22/07/2020</strong></td>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
                     </tr>
                     <tr>
                         <th>Título radiofonista: </th>
-                        <td><input style="width: 50%;" type="file" name="adjunto" accept=".*" multiple /><strong
-                                style="margin-left: 10%;">22/07/2020</strong></td>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
                     </tr>
                     <tr>
                         <th>Otros títulos o formaciones: </th>
-                        <td><input style="width: 50%;" type="file" name="adjunto" accept=".*" multiple /><strong
-                                style="margin-left: 10%;">22/07/2020</strong></td>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
+                    </tr>
+                    <tr id="anadiradicional" style="visibility: hidden; display: none;">
+                        <td>Descripción : <input type="text"></td>
+                        <td><input type="file" multiple><button onclick="addAdicionalStats()"
+                                style="margin-left: 100px;">Guardar</button></td>
                     </tr>
                 </table>
             </div>
