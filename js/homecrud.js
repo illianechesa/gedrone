@@ -424,3 +424,27 @@ function showIncidentHistory() {
         }
     }
 }
+
+function verEstudioSeguridad() {
+    var x = document.getElementById("estudioseguridad");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}
+
+function verAeronaves() {
+    var x = document.getElementById("aeronaveslista");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}

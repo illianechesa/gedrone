@@ -163,7 +163,7 @@
                     </tr>
                     <tr>
                         <th>Rol piloto: </th>
-                        <th><input type="text" name="modelo"></th>
+                        <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" multiple /></td>
                     </tr>
                     <tr>
                         <th>Rol operacion: </th>
@@ -171,12 +171,12 @@
                     </tr>
                     <tr>
                         <th>Estudio de seguridad: </th>
-                        <th><input type="text" name="modelo"></th>
+                        <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" multiple /></td>
                     </tr>
                     <tr>
                         <th>Aeronave: </th>
                         <td>
-                            <select name="modelo" id="">
+                            <select name="modelo" id="" multiple>
                                 <option>A1</option>
                                 <option>A2</option>
                                 <option>A3</option>
@@ -211,14 +211,52 @@
                         <td>Comercial<img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar"
                                 height="13px" onclick=""></td>
                         <td>Vuelo de correos</td>
-                        <td>$rolPiloto</td>
-                        <td>$rolOperacion</td>
-                        <td>$estudioDeSeguridad</td>
-                        <td>$Aeronave</td>
+                        <td><img src="../../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')"></td>
+                        <td>Vuelos</td>
+                        <td><a href="#" onclick="verEstudioSeguridad()">Documentación</a><img
+                                src="../../img/edit_icon.png" style="margin-left: 15px;" alt="editar" height="13px"
+                                onclick=""></td>
+                        <td><a href="#" onclick="verAeronaves()">Aeronaves</a><img src="../../img/edit_icon.png"
+                                style="margin-left: 15px;" alt="editar" height="13px" onclick=""></td>
                     </tr>
                 </table>
             </div>
-
+        </div>
+        <div class="row">
+            <div id="estudioseguridad" style="visibility: hidden; display: none;">
+                <table id="persona" style="margin-left: 0px;">
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Archivo</th>
+                    </tr>
+                    <tr>
+                        <td>Estudio 1</td>
+                        <td><img src="../../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')"></td>
+                    </tr>
+                    <tr>
+                        <td>Estudio 2</td>
+                        <td><img src="../../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="aeronaveslista" style="visibility: hidden; display: none;">
+                <table>
+                    <table id="persona" style="margin-left: 0px;">
+                        <tr>
+                            <th>Aeronaves</th>
+                        </tr>
+                        <tr>
+                            <td>Aeronave 1</td>
+                        </tr>
+                        <tr>
+                            <td>Aeronave 2</td>
+                        </tr>
+                    </table>
+                </table>
+            </div>
         </div>
         <div class="row">
             <strong style="width: 100%; margin-bottom: 0px; margin-left: 0%; margin-top: 0px;">Incidencias<img
