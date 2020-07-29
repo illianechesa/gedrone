@@ -448,3 +448,15 @@ function verAeronaves() {
         x.style.display = "none";
     }
 }
+
+function addAeronaveStats() {
+    var x = document.getElementById("anadiraeronave");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}
