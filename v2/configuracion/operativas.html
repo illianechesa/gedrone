@@ -215,10 +215,10 @@
                                 onclick="window.open('www.google.es','_blank')"></td>
                         <td>Vuelos</td>
                         <td><a href="#" onclick="verEstudioSeguridad()">Documentación</a><img
-                                src="../../img/edit_icon.png" style="margin-left: 15px;" alt="editar" height="13px"
-                                onclick=""></td>
-                        <td><a href="#" onclick="verAeronaves()">Aeronaves</a><img src="../../img/edit_icon.png"
-                                style="margin-left: 15px;" alt="editar" height="13px" onclick=""></td>
+                                src="../../img/add_icon.png" style="margin-left: 15px;" alt="editar" height="13px"
+                                onclick="showAddFile()"></td>
+                        <td><a href="#" onclick="verAeronaves()">Aeronaves</a><img src="../../img/add_icon.png"
+                                style="margin-left: 15px;" alt="editar" height="13px" onclick="showAddFile()"></td>
                     </tr>
                 </table>
             </div>
@@ -229,16 +229,21 @@
                     <tr>
                         <th>Descripción</th>
                         <th>Archivo</th>
+                        <th></th>
                     </tr>
                     <tr>
                         <td>Estudio 1</td>
                         <td><img src="../../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
                                 onclick="window.open('www.google.es','_blank')"></td>
+                        <td><img src="../../img/delete_icon.png" alt="" style="height: 15px; width: 15px;"
+                                onclick="deleteEstudio()"></td>
                     </tr>
                     <tr>
                         <td>Estudio 2</td>
                         <td><img src="../../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
                                 onclick="window.open('www.google.es','_blank')"></td>
+                        <td><img src="../../img/delete_icon.png" alt="" style="height: 15px; width: 15px;"
+                                onclick="deleteEstudio()"></td>
                     </tr>
                 </table>
             </div>
@@ -256,6 +261,10 @@
                         </tr>
                     </table>
                 </table>
+            </div>
+            <div id="addFile" style="visibility: hidden; display: none;">
+                <input type="file" name="" id="" multiple>
+                <button onclick="showAddFile()" style="margin-left: 50px;">Guardar</button>
             </div>
         </div>
         <div class="row">

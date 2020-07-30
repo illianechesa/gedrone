@@ -17,6 +17,17 @@ function deleteDrone() {
     }
 }
 
+function deleteEstudio() {
+    var txt;
+    var r = confirm("¿Estás seguro que deseas eliminar este estudio?");
+    if (r == true) {
+        txt = "Se ha eliminado la aeronave";
+        window.open("operativas.html", "_self");
+    } else {
+        txt = "Cancelado";
+    }
+}
+
 function deleteFlight() {
     var txt;
     var r = confirm("¿Estás seguro que deseas eliminar este vuelo?");
@@ -487,6 +498,18 @@ function addRequisitosStats() {
 
 function addAdicionalStats() {
     var x = document.getElementById("anadiradicional");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.display = "block"
+    }
+    else {
+        x.style.visibility = "hidden";
+        x.style.display = "none";
+    }
+}
+
+function showAddFile() {
+    var x = document.getElementById("addFile");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
         x.style.display = "block"
