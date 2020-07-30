@@ -62,44 +62,12 @@
 
     <!-- Page Content -->
     <div class="main">
-        <!-- <div class="row" style="margin-left:0px;">
-            <a href="#" onclick="showPiloto()">Piloto</a>
-            <a href="#" onclick="showAlumno()" style="margin-left: 20px;">Alumno</a>
-            <a href="#" onclick="showInstructor()" style="margin-left: 20px;">Instructor</a>
-            <a href="#" onclick="showMecanico()" style="margin-left: 20px;">Mecanico</a>
-            <button onclick="showAddPersona()" style="margin-left: 65%;">Añadir nueva persona</button>
-        </div> -->
         <div id="row" style="margin-top: 30px;">
             <h5><a href="#" onclick="showhidePeople()" style="color: black;">Lista personas</a><img
                     src="../img/add_icon.png" style="margin-left: 20px;" alt="editar" height="23px" width="23px"
                     onclick="showAddPersona()"></h5>
         </div>
         <div id="tablamodelos" style="visibility: visible;">
-            <!-- <nav id="incidencias" style="margin-left: -25px; margin-bottom: 20px;">
-                <ul id="myUL" style="max-height: 150px;">
-                    <li><a href="#" onclick="showPiloto()">Illia
-                        </a>&nbsp</li>
-                    <li><a href="#" onclick="showAlumno()">Jesus
-                        </a>&nbsp</li>
-                    <li><a href="#" onclick="showInstructor()">Joseja
-                        </a>&nbsp</li>
-                    <li><a href="#" onclick="showMecanico()">Córdoba
-                        </a>&nbsp</li>
-                    <li><a href="#" onclick="showPiloto()">Mendívil
-                        </a>&nbsp</li>
-                    <li><a href="#" onclick="showAlumno()">Fitxi
-                        </a>&nbsp</li>
-                    <li><a href="#" onclick="showInstructor()">Falcone
-                        </a>&nbsp</li>
-                    <li><a href="#" onclick="showMecanico()">Edurne
-                        </a>&nbsp</li>
-                    <li><a href="#" onclick="showPiloto()">Aranzazu
-                        </a>&nbsp</li>
-                    <li><a href="#" onclick="showAlumno()">Asier
-                        </a>&nbsp
-                    </li>
-                </ul>
-            </nav> -->
             <table id="persona" style="margin-left: 0px;">
                 <tr>
                     <th><a href="#" onclick="showPiloto()">Illia</a></th>
@@ -220,24 +188,31 @@
                         <th>Horas voladas</th>
                         <th>Apto</th>
                         <th>Entrenamiento anual</th>
+                        <th>Eliminar</th>
                     </tr>
                     <tr>
                         <td>Marvin5</td>
                         <td>22 horas</td>
                         <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
                         <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                        20px;" onclick="deleteDronStat()"></td>
                     </tr>
                     <tr>
                         <td>DJPhantom</td>
                         <td>3 horas</td>
                         <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
                         <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                            20px;" onclick="deleteDronStat()"></td>
                     </tr>
                     <tr>
                         <td>Phantom DJ</td>
                         <td>12 horas</td>
                         <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
                         <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                            20px;" onclick="deleteDronStat()"></td>
                     </tr>
                     <tr id="anadiraeronave" style="visibility: hidden; display: none;">
                         <td>
@@ -262,24 +237,31 @@
                         <th>Descripción</th>
                         <th>Apto</th>
                         <th>Entrenamiento anual</th>
+                        <th>Eliminar</th>
                     </tr>
                     <tr>
                         <td>BVLOS</td>
                         <td>Volar sobre objetos</td>
                         <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
                         <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                            20px;" onclick="deleteOperationStat()"></td>
                     </tr>
                     <tr>
                         <td>BRLOS</td>
                         <td>Obtener volumen 3D</td>
                         <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
                         <td><img src="../img/deactivate_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                            20px;" onclick="deleteOperationStat()"></td>
                     </tr>
                     <tr>
                         <td>VLOS</td>
                         <td>Fotografía animal</td>
                         <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
                         <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                            20px;" onclick="deleteOperationStat()"></td>
                     </tr>
                     <tr id="anadiroperacion" style="visibility: hidden; display: none;">
                         <td>
@@ -306,23 +288,31 @@
                         <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
                                 onclick="window.open('www.google.es','_blank')">
                             <strong>22/07/2020</strong></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                     <tr>
                         <th>Certificado piloto (Práctico): </th>
                         <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
                                 onclick="window.open('www.google.es','_blank')">
                             <strong>22/07/2020</strong></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                     <tr>
                         <th>Certificado médico: </th>
                         <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
                                 onclick="window.open('www.google.es','_blank')">
                             <strong>22/07/2020</strong></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                     <tr id="anadirrequisito" style="visibility: hidden; display: none;">
                         <td>Descripción : <input type="text"></td>
                         <td><input type="file" multiple><button onclick="addRequisitosStats()"
                                 style="margin-left: 100px;">Guardar</button></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                    20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                 </table>
             </div>
@@ -335,18 +325,24 @@
                         <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
                                 onclick="window.open('www.google.es','_blank')">
                             <strong>22/07/2020</strong></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                     <tr>
                         <th>Título radiofonista: </th>
                         <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
                                 onclick="window.open('www.google.es','_blank')">
                             <strong>22/07/2020</strong></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                     <tr>
                         <th>Otros títulos o formaciones: </th>
                         <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
                                 onclick="window.open('www.google.es','_blank')">
                             <strong>22/07/2020</strong></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                     <tr id="anadiradicional" style="visibility: hidden; display: none;">
                         <td>Descripción : <input type="text"></td>
