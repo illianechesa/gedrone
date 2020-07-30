@@ -17,6 +17,39 @@ function deleteDrone() {
     }
 }
 
+function deleteDronStat() {
+    var txt;
+    var r = confirm("¿Estás seguro que deseas eliminar esta aeronave?");
+    if (r == true) {
+        txt = "Se ha eliminado la aeronave";
+        window.open("mydata.html", "_self");
+    } else {
+        txt = "Cancelado";
+    }
+}
+
+function deleteOperationStat() {
+    var txt;
+    var r = confirm("¿Estás seguro que deseas eliminar esta operacion?");
+    if (r == true) {
+        txt = "Se ha eliminado la aeronave";
+        window.open("mydata.html", "_self");
+    } else {
+        txt = "Cancelado";
+    }
+}
+
+function deleteDocumentationStat() {
+    var txt;
+    var r = confirm("¿Estás seguro que deseas eliminar esta documentación?");
+    if (r == true) {
+        txt = "Se ha eliminado la aeronave";
+        window.open("mydata.html", "_self");
+    } else {
+        txt = "Cancelado";
+    }
+}
+
 function deleteEstudio() {
     var txt;
     var r = confirm("¿Estás seguro que deseas eliminar este estudio?");
