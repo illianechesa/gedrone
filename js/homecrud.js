@@ -282,7 +282,7 @@ function checkChecklist() {
     var x = document.getElementById("aeronaves");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
-        x.style.display = "block"
+        x.style.display = "block";
     }
     else {
         x.style.visibility = "hidden";
@@ -306,7 +306,7 @@ function showPiloto() {
     var x = document.getElementById("menu1");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
-        x.style.display = "block"
+        x.style.display = "block";
     }
     else {
         x.style.visibility = "hidden";
@@ -330,7 +330,7 @@ function showAlumno() {
     var x = document.getElementById("menu2");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
-        x.style.display = "block"
+        x.style.display = "block";
     }
     else {
         x.style.visibility = "hidden";
@@ -354,7 +354,7 @@ function showInstructor() {
     var x = document.getElementById("menu3");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
-        x.style.display = "block"
+        x.style.display = "block";
     }
     else {
         x.style.visibility = "hidden";
@@ -378,7 +378,7 @@ function showMecanico() {
     var x = document.getElementById("menu4");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
-        x.style.display = "block"
+        x.style.display = "block";
     }
     else {
         x.style.visibility = "hidden";
@@ -402,7 +402,7 @@ function showObservador() {
     var x = document.getElementById("menu7");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
-        x.style.display = "block"
+        x.style.display = "block";
     }
     else {
         x.style.visibility = "hidden";
@@ -426,7 +426,7 @@ function showAddPersona() {
     var x = document.getElementById("menu5");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
-        x.style.display = "block"
+        x.style.display = "block";
     }
     else {
         x.style.visibility = "hidden";
@@ -438,7 +438,7 @@ function showhidePeople() {
     var x = document.getElementById("tablamodelos");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
-        x.style.display = "block"
+        x.style.display = "block";
     }
     else {
         x.style.visibility = "hidden";
@@ -450,7 +450,7 @@ function showhidemodels() {
     var x = document.getElementById("tablamodelos");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
-        x.style.display = "block"
+        x.style.display = "block";
     }
     else {
         x.style.visibility = "hidden";
@@ -462,7 +462,7 @@ function showhideDrones() {
     var x = document.getElementById("tablamodelos");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
-        x.style.display = "block"
+        x.style.display = "block";
     }
     else {
         x.style.visibility = "hidden";
@@ -474,7 +474,7 @@ function addNewModel() {
     var x = document.getElementById("newmodel");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
-        x.style.display = "block"
+        x.style.display = "block";
     }
     else {
         x.style.visibility = "hidden";
