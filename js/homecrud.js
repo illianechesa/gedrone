@@ -291,6 +291,18 @@ function checkChecklist() {
 }
 
 function showPiloto() {
+    document.getElementById("menu2").style.visibility = "hidden";
+    document.getElementById("menu2").style.display = "none";
+    document.getElementById("menu3").style.visibility = "hidden";
+    document.getElementById("menu3").style.display = "none";
+    document.getElementById("menu4").style.visibility = "hidden";
+    document.getElementById("menu4").style.display = "none";
+    document.getElementById("menu5").style.visibility = "hidden";
+    document.getElementById("menu5").style.display = "none";
+    document.getElementById("menu6").style.visibility = "hidden";
+    document.getElementById("menu6").style.display = "none";
+    document.getElementById("menu7").style.visibility = "hidden";
+    document.getElementById("menu7").style.display = "none";
     var x = document.getElementById("menu1");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
@@ -303,6 +315,18 @@ function showPiloto() {
 }
 
 function showAlumno() {
+    document.getElementById("menu1").style.visibility = "hidden";
+    document.getElementById("menu1").style.display = "none";
+    document.getElementById("menu3").style.visibility = "hidden";
+    document.getElementById("menu3").style.display = "none";
+    document.getElementById("menu4").style.visibility = "hidden";
+    document.getElementById("menu4").style.display = "none";
+    document.getElementById("menu5").style.visibility = "hidden";
+    document.getElementById("menu5").style.display = "none";
+    document.getElementById("menu6").style.visibility = "hidden";
+    document.getElementById("menu6").style.display = "none";
+    document.getElementById("menu7").style.visibility = "hidden";
+    document.getElementById("menu7").style.display = "none";
     var x = document.getElementById("menu2");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
@@ -315,6 +339,18 @@ function showAlumno() {
 }
 
 function showInstructor() {
+    document.getElementById("menu2").style.visibility = "hidden";
+    document.getElementById("menu2").style.display = "none";
+    document.getElementById("menu1").style.visibility = "hidden";
+    document.getElementById("menu1").style.display = "none";
+    document.getElementById("menu4").style.visibility = "hidden";
+    document.getElementById("menu4").style.display = "none";
+    document.getElementById("menu5").style.visibility = "hidden";
+    document.getElementById("menu5").style.display = "none";
+    document.getElementById("menu6").style.visibility = "hidden";
+    document.getElementById("menu6").style.display = "none";
+    document.getElementById("menu7").style.visibility = "hidden";
+    document.getElementById("menu7").style.display = "none";
     var x = document.getElementById("menu3");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
@@ -327,6 +363,18 @@ function showInstructor() {
 }
 
 function showMecanico() {
+    document.getElementById("menu2").style.visibility = "hidden";
+    document.getElementById("menu2").style.display = "none";
+    document.getElementById("menu3").style.visibility = "hidden";
+    document.getElementById("menu3").style.display = "none";
+    document.getElementById("menu1").style.visibility = "hidden";
+    document.getElementById("menu1").style.display = "none";
+    document.getElementById("menu5").style.visibility = "hidden";
+    document.getElementById("menu5").style.display = "none";
+    document.getElementById("menu6").style.visibility = "hidden";
+    document.getElementById("menu6").style.display = "none";
+    document.getElementById("menu7").style.visibility = "hidden";
+    document.getElementById("menu7").style.display = "none";
     var x = document.getElementById("menu4");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
@@ -339,7 +387,19 @@ function showMecanico() {
 }
 
 function showObservador() {
-    var x = document.getElementById("menu2");
+    document.getElementById("menu1").style.visibility = "hidden";
+    document.getElementById("menu1").style.display = "none";
+    document.getElementById("menu3").style.visibility = "hidden";
+    document.getElementById("menu3").style.display = "none";
+    document.getElementById("menu4").style.visibility = "hidden";
+    document.getElementById("menu4").style.display = "none";
+    document.getElementById("menu5").style.visibility = "hidden";
+    document.getElementById("menu5").style.display = "none";
+    document.getElementById("menu6").style.visibility = "hidden";
+    document.getElementById("menu6").style.display = "none";
+    document.getElementById("menu2").style.visibility = "hidden";
+    document.getElementById("menu2").style.display = "none";
+    var x = document.getElementById("menu7");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
         x.style.display = "block"
@@ -351,6 +411,18 @@ function showObservador() {
 }
 
 function showAddPersona() {
+    document.getElementById("menu2").style.visibility = "hidden";
+    document.getElementById("menu2").style.display = "none";
+    document.getElementById("menu3").style.visibility = "hidden";
+    document.getElementById("menu3").style.display = "none";
+    document.getElementById("menu4").style.visibility = "hidden";
+    document.getElementById("menu4").style.display = "none";
+    document.getElementById("menu1").style.visibility = "hidden";
+    document.getElementById("menu1").style.display = "none";
+    document.getElementById("menu6").style.visibility = "hidden";
+    document.getElementById("menu6").style.display = "none";
+    document.getElementById("menu7").style.visibility = "hidden";
+    document.getElementById("menu7").style.display = "none";
     var x = document.getElementById("menu5");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
