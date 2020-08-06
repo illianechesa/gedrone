@@ -501,11 +501,12 @@ function addIncident() {
     var x = document.getElementById("anadirIncidencia");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
-        x.style.display = "block"
+        x.style.display = "block";
     }
     else {
         x.style.visibility = "hidden";
         x.style.display = "none";
+        alert("Incidencia añadida correctamente!");
     }
 }
 
