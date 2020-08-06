@@ -623,5 +623,6 @@ function showAddFile() {
     else {
         x.style.visibility = "hidden";
         x.style.display = "none";
+        alert('Guardado correctamente!');
     }
 }
