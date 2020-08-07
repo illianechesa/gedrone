@@ -72,9 +72,10 @@
                     src="../../img/add_icon.png" style="margin-left: 20px;" alt="editar" height="23px" width="23px"
                     onclick="showAddSist()">
             </strong>
-            <table id="vuelos" style="margin-left: 0px; margin-right: 80%; width: 30%;">
+            <table id="vuelos" style="margin-left: 0px; margin-right: 80%; width: 44%;">
                 <tr>
                     <th>Tipo</th>
+                    <th>Subtipo</th>
                     <th>Descripción</th>
                     <th>Editar</th>
                     <th>Desactivar</th>
@@ -83,7 +84,11 @@
             <div id="tablamodelos">
                 <table id="vuelos" style="margin-left: 0px;">
                     <tr>
-                        <th style="width: 10%"><a href="#" onclick="loadCargaConf()" style="color: black;">Comercial</a>
+                        <th style="width: 10%"><a href="#" onclick="loadCargaConf()"
+                                style="color: black;">Especializada</a>
+                        </th>
+                        <th style="width: 10%"><a href="#" onclick="loadCargaConf()"
+                                style="color: black;">Declarativa</a>
                         </th>
                         <th style="width: 10%;"><a href="#" onclick="loadCargaConf()" style="color: black;">Vuelo de
                                 correos</a></th>
@@ -93,7 +98,10 @@
                                 height="13px" onclick="deactivateButton()">
                     </tr>
                     <tr>
-                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Comercial</a></th>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Especializada</a></th>
+                        <th style="width: 10%"><a href="#" onclick="loadCargaConf()"
+                                style="color: black;">Autorizativa</a>
+                        </th>
                         <th><a href="#" onclick="loadCargaConf()" style="color: black;">Vuelo del ayuntamiento</a></th>
                         <th><img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
                                 onclick="loadCargaConf()"></th>
@@ -101,7 +109,9 @@
                                 height="13px" onclick="deactivateButton()">
                     </tr>
                     <tr>
-                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Entrenamiento</a></th>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Experimental</a></th>
+                        <th style="width: 10%"><a href="#" onclick="loadCargaConf()" style="color: black;">I+d</a>
+                        </th>
                         <th><a href="#" onclick="loadCargaConf()" style="color: black;">Despegues</a></th>
                         <th><img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
                                 onclick="loadCargaConf()"></th>
@@ -109,7 +119,10 @@
                                 height="13px" onclick="deactivateButton()">
                     </tr>
                     <tr>
-                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Entrenamiento</a></th>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Experimental</a></th>
+                        <th style="width: 10%"><a href="#" onclick="loadCargaConf()"
+                                style="color: black;">Exhibición</a>
+                        </th>
                         <th><a href="#" onclick="loadCargaConf()" style="color: black;">Aterrizaje en plataforma QR</a>
                         </th>
                         <th><img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
@@ -118,7 +131,10 @@
                                 height="13px" onclick="deactivateButton()">
                     </tr>
                     <tr>
-                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Comercial</a></th>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Especializada</a></th>
+                        <th style="width: 10%"><a href="#" onclick="loadCargaConf()"
+                                style="color: black;">Certificada</a>
+                        </th>
                         <th><a href="#" onclick="loadCargaConf()" style="color: black;">Suministro de farmacéuticos</a>
                         </th>
                         <th><img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
@@ -127,7 +143,10 @@
                                 height="13px" onclick="deactivateButton()">
                     </tr>
                     <tr>
-                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Entrenamiento</a></th>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Experimental</a></th>
+                        <th style="width: 10%"><a href="#" onclick="loadCargaConf()" style="color: black;">Desarrollo
+                                aeronave</a>
+                        </th>
                         <th><a href="#" onclick="loadCargaConf()" style="color: black;">Flip 360</a></th>
                         <th><img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
                                 onclick="loadCargaConf()"></th>
@@ -135,7 +154,10 @@
                                 height="13px" onclick="deactivateButton()">
                     </tr>
                     <tr>
-                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Entrenamiento</a></th>
+                        <th><a href="#" onclick="loadCargaConf()" style="color: black;">Experimental</a></th>
+                        <th style="width: 10%"><a href="#" onclick="loadCargaConf()" style="color: black;">Prueba
+                                garantizada seguridad</a>
+                        </th>
                         <th><a href="#" onclick="loadCargaConf()" style="color: black;">Empujar al dron</a></th>
                         <th><img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar" height="13px"
                                 onclick="loadCargaConf()"></th>
@@ -152,8 +174,22 @@
                         <th>Tipo: </th>
                         <td>
                             <select name="modelo" id="">
-                                <option>Comercial</option>
-                                <option>Entrenamiento</option>
+                                <option>Especializada</option>
+                                <option>Experimental</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Subtipo: </th>
+                        <td>
+                            <select name="modelo" id="">
+                                <option>Declarativa</option>
+                                <option>Autorizativa</option>
+                                <option>Certificada</option>
+                                <option>Prueba garantizacion seguridad</option>
+                                <option>Desarrollo aeronave</option>
+                                <option>I+d</option>
+                                <option>Exhibición</option>
                             </select>
                         </td>
                     </tr>
@@ -202,6 +238,7 @@
                     style="margin-left: 0px; margin-top: 10px; width: 100%; visibility: hidden; display: none;">
                     <tr>
                         <th>Tipo</th>
+                        <th>Subtipo</th>
                         <th>Descripción</th>
                         <th>Rol piloto</th>
                         <th>Rol operación</th>
@@ -209,8 +246,9 @@
                         <th>Aeronave</th>
                     </tr>
                     <tr>
-                        <td>Comercial<img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar"
+                        <td>Especializada<img src="../../img/edit_icon.png" style="margin-left: 20px;" alt="editar"
                                 height="13px" onclick=""></td>
+                        <td>Declarativa</td>
                         <td>Vuelo de correos</td>
                         <td><img src="../../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
                                 onclick="window.open('www.google.es','_blank')"></td>
