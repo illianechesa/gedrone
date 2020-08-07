@@ -67,48 +67,58 @@
                     src="../img/add_icon.png" style="margin-left: 20px;" alt="editar" height="23px" width="23px"
                     onclick="showAddPersona()"></h5>
         </div>
+        <div id="row">
+            <table id="aeronaves" style="margin-left: 0px;">
+                <th>Nombre</th>
+                <th>Piloto</th>
+                <th>Observador</th>
+                <th>Mantenedor</th>
+                <th>Instructor</th>
+                <th>Alumno</th>
+            </table>
+        </div>
         <div id="tablamodelos" style="visibility: visible;">
             <table id="persona" style="margin-left: 0px;">
                 <tr>
                     <th><a href="#" onclick="showPiloto()">Illia</a></th>
                     <th><img src="../img/pilot_icon.png" style="margin-left: 23px;" alt="editar" height="23px"
                             width="20px" onclick="showPiloto()"></th>
-                    <th></th>
-                    <th><img src="../img/instructor_icon.png" style="margin-left: 25px;" alt="editar" height="25px"
-                            width="20px" onclick="showInstructor()"></th>
-                    <th><img src="../img/mantenimiento_icon.png" style="margin-left: 20px;" alt="editar" height="18px"
-                            width="18px" onclick="showMecanico()"></th>
                     <th><img src="../img/eye_icon.png" style="margin-left: 20px;" alt="editar" height="22px"
                             width="22px" onclick="showObservador()"></th>
+                    <th><img src="../img/mantenimiento_icon.png" style="margin-left: 20px;" alt="editar" height="18px"
+                            width="18px" onclick="showMecanico()"></th>
+                    <th><img src="../img/instructor_icon.png" style="margin-left: 25px;" alt="editar" height="25px"
+                            width="20px" onclick="showInstructor()"></th>
+                    <th></th>
                 </tr>
                 <tr>
                     <th><a href="#" onclick="showAlumno()">Jesus</a></th>
                     <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
                     <th><img src="../img/pupil_icon.png" style="margin-left: 23px;" alt="editar" height="20px"
                             width="20px" onclick="showAlumno()"></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
                 </tr>
                 <tr>
                     <th><a href="#" onclick="showInstructor()">Joseja</a></th>
                     <th><img src="../img/pilot_icon.png" style="margin-left: 23px;" alt="editar" height="23px"
                             width="20px" onclick="showPiloto()"></th>
+                    <th><img src="../img/eye_icon.png" style="margin-left: 20px;" alt="editar" height="22px"
+                            width="22px" onclick="showObservador()"></th>
                     <th></th>
                     <th><img src="../img/instructor_icon.png" style="margin-left: 25px;" alt="editar" height="25px"
                             width="20px" onclick="showInstructor()"></th>
                     <th></th>
-                    <th><img src="../img/eye_icon.png" style="margin-left: 20px;" alt="editar" height="22px"
-                            width="22px" onclick="showObservador()"></th>
                 </tr>
                 <tr>
                     <th><a href="#" onclick="showInstructor()">Córdoba</a></th>
                     <th><img src="../img/pilot_icon.png" style="margin-left: 23px;" alt="editar" height="23px"
                             width="20px" onclick="showPiloto()"></th>
                     <th></th>
-                    <th></th>
                     <th><img src="../img/mantenimiento_icon.png" style="margin-left: 25px;" alt="editar" height="18px"
                             width="18px" onclick="showMecanico()"></th>
+                    <th></th>
                     <th></th>
                 </tr>
                 <tr>
@@ -116,29 +126,29 @@
                     <th><img src="../img/pilot_icon.png" style="margin-left: 23px;" alt="editar" height="23px"
                             width="20px" onclick="showPiloto()"></th>
                     <th></th>
-                    <th><img src="../img/instructor_icon.png" style="margin-left: 25px;" alt="editar" height="25px"
-                            width="20px" onclick="showInstructor()"></th>
                     <th><img src="../img/mantenimiento_icon.png" style="margin-left: 25px;" alt="editar" height="18px"
                             width="18px" onclick="showMecanico()"></th>
+                    <th><img src="../img/instructor_icon.png" style="margin-left: 25px;" alt="editar" height="25px"
+                            width="20px" onclick="showInstructor()"></th>
                     <th></th>
                 </tr>
                 <tr>
                     <th><a href="#" onclick="showAlumno()">Fitxi</a></th>
                     <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
                     <th><img src="../img/pupil_icon.png" style="margin-left: 23px;" alt="editar" height="20px"
                             width="20px" onclick="showAlumno()"></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
                 </tr>
                 <tr>
                     <th><a href="#" onclick="showInstructor()">Falcone</a></th>
                     <th><img src="../img/pilot_icon.png" style="margin-left: 23px;" alt="editar" height="23px"
                             width="20px" onclick="showPiloto()"></th>
                     <th></th>
+                    <th></th>
                     <th><img src="../img/instructor_icon.png" style="margin-left: 25px;" alt="editar" height="25px"
                             width="20px" onclick="showInstructor()"></th>
-                    <th></th>
                     <th></th>
                 </tr>
                 <tr>
@@ -146,9 +156,9 @@
                     <th><img src="../img/pilot_icon.png" style="margin-left: 23px;" alt="editar" height="23px"
                             width="20px" onclick="showPiloto()"></th>
                     <th></th>
-                    <th></th>
                     <th><img src="../img/mantenimiento_icon.png" style="margin-left: 25px;" alt="editar" height="18px"
                             width="18px" onclick="showMecanico()"></th>
+                    <th></th>
                     <th></th>
                 </tr>
             </table>
@@ -168,10 +178,6 @@
                     <tr>
                         <th>Fecha caducidad carnet: </th>
                         <td>22/12/2020</td>
-                    </tr>
-                    <tr>
-                        <th>Fecha caducidad seguro: </th>
-                        <td>12/02/2020</td>
                     </tr>
                 </table>
                 <img src="../img/flight_hours.png" alt="graph"
@@ -287,7 +293,7 @@
                         <th>Certificado piloto (Teórico): </th>
                         <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
                                 onclick="window.open('www.google.es','_blank')">
-                            <strong>22/07/2020</strong></td>
+                        </td>
                         <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
                                 20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
@@ -295,7 +301,7 @@
                         <th>Certificado piloto (Práctico): </th>
                         <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
                                 onclick="window.open('www.google.es','_blank')">
-                            <strong>22/07/2020</strong></td>
+                        </td>
                         <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
                                 20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
@@ -324,7 +330,7 @@
                         <th>Certificado de equivalencia (Práctico): </th>
                         <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
                                 onclick="window.open('www.google.es','_blank')">
-                            <strong>22/07/2020</strong></td>
+                        </td>
                         <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
                                 20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
@@ -332,7 +338,7 @@
                         <th>Título radiofonista: </th>
                         <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
                                 onclick="window.open('www.google.es','_blank')">
-                            <strong>22/07/2020</strong></td>
+                        </td>
                         <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
                                 20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
@@ -340,7 +346,7 @@
                         <th>Otros títulos o formaciones: </th>
                         <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
                                 onclick="window.open('www.google.es','_blank')">
-                            <strong>22/07/2020</strong></td>
+                        </td>
                         <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
                                 20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
@@ -353,174 +359,292 @@
             </div>
         </div>
         <div id="menu2" style="visibility: hidden; display: none;">
-            <h5>Persona</h5>
+            <h5>Alumno</h5>
             <div class="row">
-                <table id="persona">
-                    <tr>
-                        <th>Rol: </th>
-                        <td>Alumno </td>
-                    </tr>
+                <table id="persona" style="width: 30%;">
                     <tr>
                         <th>Nombre: </th>
-                        <td>Jesús</td>
+                        <td>Jesús </td>
+                    </tr>
+                    <tr>
+                        <th>NºCarnet: </th>
+                        <td>4542</td>
+                    </tr>
+                    <tr>
+                        <th>Fecha caducidad carnet: </th>
+                        <td>22/12/2020</td>
                     </tr>
                 </table>
+                <img src="../img/flight_hours.png" alt="graph"
+                    style="width: 20%; height: 20%; margin-left: 20%; margin-top: 0%;">
             </div>
-            <h5>Alumno</h5>
+            <h5 style="width: 100%;">Documentación</h5>
+            <h6 style="width: 100%; margin-top: 20px;">Requisitos pilotaje<img src="../img/add_icon.png"
+                    style="margin-left: 10px;" alt="editar" height="18px" width="18px" onclick="addRequisitosStats()">
+            </h6>
             <div class="row">
                 <table id="piloto">
                     <tr>
-                        <th>Carnet: </th>
-                        <td>21312</td>
+                        <th>Certificado piloto (Teórico): </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                     <tr>
-                        <th>Certificados: </th>
-                        <td><a href="">EIS-123</a></td>
+                        <th>Certificado piloto (Práctico): </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                     <tr>
-                        <th>Persisos: </th>
-                        <td><a href="">GR11</a></td>
+                        <th>Certificado médico: </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
-                    <tr>
-                        <th>Formación: </th>
-                        <td>Prácticas</td>
-                    </tr>
-                    <tr>
-                        <th>Aeronaves: </th>
-                        <td>Marvin5, DJI Phantom</td>
-                    </tr>
-                    <tr>
-                        <th>Maniobra: </th>
-                        <td>Aterrizajes</td>
-                    </tr>
-                    <tr>
-                        <th>Referencia: </th>
-                        <td>23123</td>
+                    <tr id="anadirrequisito" style="visibility: hidden; display: none;">
+                        <td>Descripción : <input type="text"></td>
+                        <td><input type="file" multiple><button onclick="addRequisitosStats()"
+                                style="margin-left: 100px;">Guardar</button></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                    20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                 </table>
-                <img src="../img/alumno_graph.jpg" alt="graph" style="width: 25%; height: 25%; margin-left: 2%;">
+            </div>
+            <h6>Documentación adicional<img src="../img/add_icon.png" style="margin-left: 10px;" alt="editar"
+                    height="18px" width="18px" onclick="addAdicionalStats()"></h6>
+            <div class="row">
+                <table id="piloto">
+                    <tr>
+                        <th>Certificado de equivalencia (Práctico): </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
+                    </tr>
+                    <tr>
+                        <th>Título radiofonista: </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
+                    </tr>
+                    <tr>
+                        <th>Otros títulos o formaciones: </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
+                    </tr>
+                    <tr id="anadiradicional" style="visibility: hidden; display: none;">
+                        <td>Descripción : <input type="text"></td>
+                        <td><input type="file" multiple><button onclick="addAdicionalStats()"
+                                style="margin-left: 100px;">Guardar</button></td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div id="menu3" style="visibility: hidden; display: none;">
-            <h5>Persona</h5>
-            <div class="row">
-                <table id="persona">
-                    <tr>
-                        <th>Rol: </th>
-                        <td>Instructor </td>
-                    </tr>
-                    <tr>
-                        <th>Nombre: </th>
-                        <td>Pedro</td>
-                    </tr>
-                </table>
-            </div>
             <h5>Instructor</h5>
             <div class="row">
-                <table id="piloto">
+                <table id="persona" style="width: 30%;">
                     <tr>
-                        <th>Carnet: </th>
-                        <td>21312</td>
+                        <th>Nombre: </th>
+                        <td>Joseja </td>
                     </tr>
                     <tr>
-                        <th>Certificados: </th>
-                        <td><a href="">EIS-123</a></td>
+                        <th>NºCarnet: </th>
+                        <td>4542</td>
                     </tr>
                     <tr>
-                        <th>Persisos: </th>
-                        <td><a href="">GR11</a></td>
-                    </tr>
-                    <tr>
-                        <th>Formación: </th>
-                        <td>Prácticas</td>
-                    </tr>
-                    <tr>
-                        <th>Aeronaves: </th>
-                        <td>Marvin5, DJI Phantom</td>
-                    </tr>
-                    <tr>
-                        <th>Horas pilotadas: </th>
-                        <td>40 horas</td>
+                        <th>Fecha caducidad carnet: </th>
+                        <td>22/12/2020</td>
                     </tr>
                 </table>
-                <img src="../img/flight_hours.png" alt="graph" style="width: 30%; height: 30%; margin-left: 2%;">
+                <img src="../img/flight_hours.png" alt="graph"
+                    style="width: 20%; height: 20%; margin-left: 20%; margin-top: 0%;">
             </div>
-            <h5>Documentación</h5>
+            <h5 style="width: 100%;">Documentación</h5>
+            <h6 style="width: 100%; margin-top: 20px;">Requisitos pilotaje<img src="../img/add_icon.png"
+                    style="margin-left: 10px;" alt="editar" height="18px" width="18px" onclick="addRequisitosStats()">
+            </h6>
             <div class="row">
                 <table id="piloto">
                     <tr>
-                        <th>Seguro: </th>
-                        <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td>
+                        <th>Certificado piloto (Teórico): </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                     <tr>
-                        <th>Certificados: </th>
-                        <td><input style="width: 100%;" type="file" name="adjunto" accept=".*" /></td>
+                        <th>Certificado piloto (Práctico): </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
+                    </tr>
+                    <tr>
+                        <th>Certificado médico: </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
+                    </tr>
+                    <tr id="anadirrequisito" style="visibility: hidden; display: none;">
+                        <td>Descripción : <input type="text"></td>
+                        <td><input type="file" multiple><button onclick="addRequisitosStats()"
+                                style="margin-left: 100px;">Guardar</button></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                    20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                 </table>
             </div>
-            <h5>Documentos adicionales</h5>
+            <h6>Documentación adicional<img src="../img/add_icon.png" style="margin-left: 10px;" alt="editar"
+                    height="18px" width="18px" onclick="addAdicionalStats()"></h6>
             <div class="row">
                 <table id="piloto">
                     <tr>
-                        <th></th>
-                        <td><input style="width: 50%;" type="file" name="adjunto" accept=".*" multiple /><strong
-                                style="margin-left: 10%;">22/07/2020</strong></td>
+                        <th>Certificado de equivalencia (Práctico): </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                     <tr>
-                        <th></th>
-                        <td><input style="width: 50%;" type="file" name="adjunto" accept=".*" multiple /><strong
-                                style="margin-left: 10%;">22/07/2020</strong></td>
+                        <th>Título radiofonista: </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
+                    </tr>
+                    <tr>
+                        <th>Otros títulos o formaciones: </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
+                    </tr>
+                    <tr id="anadiradicional" style="visibility: hidden; display: none;">
+                        <td>Descripción : <input type="text"></td>
+                        <td><input type="file" multiple><button onclick="addAdicionalStats()"
+                                style="margin-left: 100px;">Guardar</button></td>
                     </tr>
                 </table>
             </div>
         </div>
         <div id="menu4" style="visibility: hidden; display: none;">
-            <h5>Persona</h5>
+            <h5>Mantenedor</h5>
             <div class="row">
-                <table id="persona">
-                    <tr>
-                        <th>Rol: </th>
-                        <td>Mecánico </td>
-                    </tr>
+                <table id="persona" style="width: 30%;">
                     <tr>
                         <th>Nombre: </th>
-                        <td>Javier</td>
+                        <td>Alberto </td>
+                    </tr>
+                    <tr>
+                        <th>NºCarnet: </th>
+                        <td>4542</td>
+                    </tr>
+                    <tr>
+                        <th>Fecha caducidad carnet: </th>
+                        <td>22/12/2020</td>
+                    </tr>
+                    <tr>
+                        <th>Lectura manuales: </th>
+                        <td><img src="../img/check_icon.png" alt="" style="width: 20px; height: 20px;"></td>
                     </tr>
                 </table>
+                <img src="../img/flight_hours.png" alt="graph"
+                    style="width: 20%; height: 20%; margin-left: 20%; margin-top: 0%;">
             </div>
-            <h5>Mecánico</h5>
+            <h5 style="width: 100%;">Documentación</h5>
+            <h6 style="width: 100%; margin-top: 20px;">Requisitos pilotaje<img src="../img/add_icon.png"
+                    style="margin-left: 10px;" alt="editar" height="18px" width="18px" onclick="addRequisitosStats()">
+            </h6>
             <div class="row">
                 <table id="piloto">
                     <tr>
-                        <th>Carnet: </th>
-                        <td>21312</td>
+                        <th>Certificado piloto (Teórico): </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                     <tr>
-                        <th>Certificados: </th>
-                        <td><a href="">EIS-123</a></td>
+                        <th>Certificado piloto (Práctico): </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                     <tr>
-                        <th>Persisos: </th>
-                        <td><a href="">GR11</a></td>
+                        <th>Certificado médico: </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
-                    <tr>
-                        <th>Formación: </th>
-                        <td>Prácticas</td>
-                    </tr>
-                    <tr>
-                        <th>Aeronaves: </th>
-                        <td>Marvin5, DJI Phantom</td>
-                    </tr>
-                    <tr>
-                        <th>Maniobra: </th>
-                        <td>Aterrizajes</td>
-                    </tr>
-                    <tr>
-                        <th>Referencia: </th>
-                        <td>23123</td>
+                    <tr id="anadirrequisito" style="visibility: hidden; display: none;">
+                        <td>Descripción : <input type="text"></td>
+                        <td><input type="file" multiple><button onclick="addRequisitosStats()"
+                                style="margin-left: 100px;">Guardar</button></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                    20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                 </table>
-                <img src="../img/alumno_graph.jpg" alt="graph" style="width: 25%; height: 25%; margin-left: 2%;">
+            </div>
+            <h6>Documentación adicional<img src="../img/add_icon.png" style="margin-left: 10px;" alt="editar"
+                    height="18px" width="18px" onclick="addAdicionalStats()"></h6>
+            <div class="row">
+                <table id="piloto">
+                    <tr>
+                        <th>Certificado de equivalencia (Práctico): </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
+                    </tr>
+                    <tr>
+                        <th>Título radiofonista: </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
+                    </tr>
+                    <tr>
+                        <th>Otros títulos o formaciones: </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
+                    </tr>
+                    <tr id="anadiradicional" style="visibility: hidden; display: none;">
+                        <td>Descripción : <input type="text"></td>
+                        <td><input type="file" multiple><button onclick="addAdicionalStats()"
+                                style="margin-left: 100px;">Guardar</button></td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div id="menu5" style="visibility: hidden; display: none;">
@@ -658,52 +782,98 @@
             </div>
         </div>
         <div id="menu7" style="visibility: hidden; display: none;">
-            <h5>Persona</h5>
+            <h5>Observador</h5>
             <div class="row">
-                <table id="persona">
-                    <tr>
-                        <th>Rol: </th>
-                        <td>Observador </td>
-                    </tr>
+                <table id="persona" style="width: 30%;">
                     <tr>
                         <th>Nombre: </th>
-                        <td>Javier</td>
+                        <td>Óscar </td>
+                    </tr>
+                    <tr>
+                        <th>NºCarnet: </th>
+                        <td>4542</td>
+                    </tr>
+                    <tr>
+                        <th>Fecha caducidad carnet: </th>
+                        <td>22/12/2020</td>
                     </tr>
                 </table>
+                <img src="../img/flight_hours.png" alt="graph"
+                    style="width: 20%; height: 20%; margin-left: 20%; margin-top: 0%;">
             </div>
-            <h5>Observador</h5>
+            <h5 style="width: 100%;">Documentación</h5>
+            <h6 style="width: 100%; margin-top: 20px;">Requisitos pilotaje<img src="../img/add_icon.png"
+                    style="margin-left: 10px;" alt="editar" height="18px" width="18px" onclick="addRequisitosStats()">
+            </h6>
             <div class="row">
                 <table id="piloto">
                     <tr>
-                        <th>Carnet: </th>
-                        <td>21312</td>
+                        <th>Certificado piloto (Teórico): </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                     <tr>
-                        <th>Certificados: </th>
-                        <td><a href="">EIS-123</a></td>
+                        <th>Certificado piloto (Práctico): </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                     <tr>
-                        <th>Persisos: </th>
-                        <td><a href="">GR11</a></td>
+                        <th>Certificado médico: </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                            <strong>22/07/2020</strong></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
-                    <tr>
-                        <th>Formación: </th>
-                        <td>Prácticas</td>
-                    </tr>
-                    <tr>
-                        <th>Aeronaves: </th>
-                        <td>Marvin5, DJI Phantom</td>
-                    </tr>
-                    <tr>
-                        <th>Maniobra: </th>
-                        <td>Aterrizajes</td>
-                    </tr>
-                    <tr>
-                        <th>Referencia: </th>
-                        <td>23123</td>
+                    <tr id="anadirrequisito" style="visibility: hidden; display: none;">
+                        <td>Descripción : <input type="text"></td>
+                        <td><input type="file" multiple><button onclick="addRequisitosStats()"
+                                style="margin-left: 100px;">Guardar</button></td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                    20px;" onclick="deleteDocumentationStat()"></td>
                     </tr>
                 </table>
-                <img src="../img/alumno_graph.jpg" alt="graph" style="width: 25%; height: 25%; margin-left: 2%;">
+            </div>
+            <h6>Documentación adicional<img src="../img/add_icon.png" style="margin-left: 10px;" alt="editar"
+                    height="18px" width="18px" onclick="addAdicionalStats()"></h6>
+            <div class="row">
+                <table id="piloto">
+                    <tr>
+                        <th>Certificado de equivalencia (Práctico): </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
+                    </tr>
+                    <tr>
+                        <th>Título radiofonista: </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
+                    </tr>
+                    <tr>
+                        <th>Otros títulos o formaciones: </th>
+                        <td><img src="../img/document_icon.png" alt="" style="width: 15px; height: 15px;"
+                                onclick="window.open('www.google.es','_blank')">
+                        </td>
+                        <td><img src="../img/delete_icon.png" alt="" style="width: 20px; height: 
+                                20px;" onclick="deleteDocumentationStat()"></td>
+                    </tr>
+                    <tr id="anadiradicional" style="visibility: hidden; display: none;">
+                        <td>Descripción : <input type="text"></td>
+                        <td><input type="file" multiple><button onclick="addAdicionalStats()"
+                                style="margin-left: 100px;">Guardar</button></td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
